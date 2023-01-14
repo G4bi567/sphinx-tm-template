@@ -11,9 +11,13 @@ En d'autres termes, les étudiants auront des questions qu'ils pourront classer 
 
 Le but premier est de montrer la recherche et le développement de ce projet démontreront les avantages et les défis de la création d'un tel forum, et fourniront des informations si un jour un tel site serait développé.
 
+
+## Préparation pour le travail
+
+N'ayant aucune connaissance dans le développement web, j'ai appris pendant les vacances scolaire le HTML, le Javascript, et le CSS. Tout a été possible avec Scrimba. Scrimba est une plate-forme d’apprentissage en ligne qui permet aux utilisateurs d’acquérir des compétences en codage grâce à des screencasts de codage interactifs. Ces screencasts sont essentiellement des didacticiels vidéo qui permettent aux utilisateurs de mettre en pause, de modifier et d’exécuter le code au fur et à mesure qu’ils suivent la vidéo. Cette approche interactive de l’apprentissage permet aux utilisateurs d’acquérir une expérience pratique du code, ce qui facilite la compréhension et la rétention des informations enseignées. De plus, Scrimba offre un aspect communautaire où les utilisateurs peuvent partager leurs propres codes avec d'autres apprenants afin de s'améliorer. Pour moi, ce site a été d'une grande aide, car on doit participer tout le temps et ce la permet de mieux suivre le cours. 
 ## Technologies utilisés
 
-Pour la création du projet, l'utilisation de outils, frameworks et de bibliothèques est nécessaire afin de faciliter le codage. Ce projet peut alors être séparé en 3 parties.
+Pour la création d'un projet, l'utilisation de outils, frameworks et de bibliothèques est nécessaire afin de faciliter le codage. Ce projet peut alors être séparé en 3 parties.
 
 #### Modélisation du frontend
 
