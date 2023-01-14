@@ -3,7 +3,7 @@
     You can adapt this file completely to your liking, but it should at least
     contain the root `toctree` directive.
 
-Titre du travail de maturité
+Création d’un forum pour les étudiants du Collège du Sud
 ============================
 
 ..  toctree::

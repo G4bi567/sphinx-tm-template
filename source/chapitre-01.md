@@ -1,11 +1,6 @@
-# Titre du chapitre 1
-
-petit texte débile ahahah alkdflkajdslkjf
+# Fonctionnement du projet
 
 
-asdf
+## Organisation des fichiers
 
-
-## Titre 1
-
-### Titre 2
+## Explication des composants

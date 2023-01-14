@@ -1,11 +1,11 @@
 class TMConfig:
 
-    title = u'Titre du TM'
-    first_name = 'Prénom'
-    last_name = 'Nom'
+    title = u"Création d’un forum pour les étudiants du Collège du Sud"
+    first_name = 'Gabriel'
+    last_name = 'Teixeira Dias'
     author = f'{first_name} {last_name}'
-    year = u'2022'
-    month = u'Décembre'
+    year = u'2023'
+    month = u'Janvier'
     seminary_title = u'Développement Web'
     tutor = u"Cédric Donner et Johan Jobin"
     release = "Version intermédiaire"

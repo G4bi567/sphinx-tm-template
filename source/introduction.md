@@ -1,35 +1,46 @@
-# Introduction (version Markdown / MyST)
+# Introduction au travail
 
-```{admonition} Information
-Ce chapitre d'introduction doit être complété avec les informations concernant le chapitre d'introduction au TM. 
+## Motivation personnelle
+
+Pour commencer, la programmation m'a en effet toujours intéressé, mais je me trouvais trop passif dans l'apprentissage d'un langage. Je voulais aussi faire un projet qui puisse aider des personnes. Grâce à ces motivations, j'ai pu choisir un travail dans lequel je m'impliquerais complètement.
+## Présentation du projet
+
+L'objectif de ce projet est de créer un espace de discussion. Le forum fournirait une plate-forme surtout pour les élèves pour se connecter et résoudre des difficutés, collaborer, partager des idées et discuter de sujets liés à l'école. 
+
+En d'autres termes, les étudiants auront des questions qu'ils pourront classer par branche scolaire. Grâce à l'entraide, des élèves avec plus de facilité dans la matière choisie pourra répondre à la questions. Si d'autres personnes veulent ajouter quelque chose, ils peuvent en effet répondre à la question ou ajouter un commentaire à la réponse.
+
+Le but premier est de montrer la recherche et le développement de ce projet démontreront les avantages et les défis de la création d'un tel forum, et fourniront des informations si un jour un tel site serait développé.
+
+## Technologies utilisés
+
+Pour la création du projet, l'utilisation de outils, frameworks et de bibliothèques est nécessaire afin de faciliter le codage. Ce projet peut alors être séparé en 3 parties.
+
+#### Modélisation du frontend
+
+J'ai utilisé Figma[^figma] qui est un outil de conception et de prototypage d’interface basé sur le cloud qui permet aux équipes de collaborer et de concevoir des interfaces utilisateur pour les sites Web et les applications mobiles. Il vise à faciliter la création, le test et l’itération sur les interfaces pour les équipes de toutes tailles, réduisant ainsi le temps et les efforts nécessaires à la conception et au développement de produits numériques de haute qualité.
+
+```{admonition} Vous pouvez accéder à la maquette à travers ce lien
+https://www.figma.com/file/9ZUc3VP0pH2g8zye4LUYCc/Gabriel_Forum?node-id=3853%3A973&t=Be8EbHZ1stm873WQ-1
+```
+#### Programation du projet
+Premièrement, il nous a été proposé l'utilisation de StackBlitz[^stackblitz] qui est un environnement de développement en ligne pour la création d’applications Web. Il s’agit d’un environnement de développement intégré basé sur le cloud qui permet aux développeurs d’écrire, de tester et de déboguer leur code dans le navigateur. Il prend en charge un large éventail de technologies de développement Web, notamment JavaScript, Angular, React et surtout Vue.js, que je vous présenterais après. 
+
+L’une des principales caractéristiques de StackBlitz est la possibilité d’exécuter des applications dans le navigateur, ce qui signifie que les développeurs peuvent voir leurs modifications en temps réel sans avoir à configurer un environnement de développement local. Cela le rend particulièrement utile pour le prototypage rapide et le développement de petits projets. De plus, StackBlitz offre une option pour partager et héberger facilement des applications, ce qui est utile pour faire la démonstration et tester des applications avec d’autres personnes. Tout en étant possible d'intégrer Git Hub, il est alors le meilleur environnement pour se projet supervisé.
+
+Ensuite, nous avons utilisé Vue.js[^Vue.js] qui est un framework JavaScript pour la création d’interfaces utilisateur et d’applications monopages. Vue.js utilise une architecture basée sur des composants, qui permet aux développeurs de créer des éléments d’interface utilisateur réutilisables, modulaires et autonomes. Chaque composant définit ses propres données, méthodes et modèles, qui peuvent être facilement composés et réutilisés dans l’application. L’une des principales caractéristiques de Vue.js est son système de réactivité, qui met automatiquement à jour l’interface utilisateur lorsque l’état du composant change. Cela facilite la création d’applications dynamiques et réactives qui se mettent à jour en temps réel.
+
+Finalement, j'utilise Quasar qui est un framework pour construire des interfaces utilisateur réactives et performantes avec Vue.js. Quasar est conçu pour fonctionner de manière transparente avec Vue.js et comprend un ensemble de fonctionnalités puissantes pour aider les développeurs à créer des applications Web et mobiles avec une apparence cohérente, y compris un riche ensemble de composants d’interface utilisateur, d’utilitaires et de directives prédéfinis. Le framework est particulièrement utile pour créer des applications réactives qui s’affichent et se comportent de manière cohérente sur différents appareils et tailles d’écran.
+#### La partie serveur et stockage
+
+```{admonition} En cours de rédaction
+---
+class: attention
+---
+
+Cette section n'est pas encore commencé.
+
 ```
 
-À compléter ... avec les informations concernant le chapitre d'introduction au TM. 
-
-## Informations à inclure pour un TM de type "outil"
-
-Si le TM est du type "outil d'enseignement", ce chapitre doit contenir les informations suivantes:
-
-* Présentation rapide de l'outil
-* Intérêt de l'outil (ce qu'il apporte) et aperçu des solutions similaires existantes s'il y en a
-* Aperçu des technologies utilisées
-* Configuration matérielle requise pour compiler / utiliser l'outil
-* Connaissances requises pour utiliser l'outil
-* Connaissances requises pour comprendre le fonctionnement de l'outil
-
-## Informations à inclure pour un TM de type "tutoriel"
-
-Si le TM est du type "tutoriel", ce chapitre doit contenir les informations suivantes:
-
-* Présentation très rapide du sujet / domaine
-* Si le tutoriel montre comment développer un projet, présenter très rapidement le projet
-* Objectifs pédagogiques du tutoriel / public visé
-* Aperçu des technologies et concepts utilisés
-* Configuration matérielle requise pour compiler / utiliser le projet
-* Connaissances requises pour comprendre le tutoriel 
-
-
-
-Ce chapitre doit présenter rapidement le projet, son intérêt, les technologies utilisées.
-
-
+[^figma]: https://designshack.net/articles/software/what-is-figma-intro/
+[^stackblitz]: https://developer.stackblitz.com/guides/user-guide/what-is-stackblitz
+[^Vue.js]: https://vuejs.org/guide/introduction.html#pick-your-learning-path
