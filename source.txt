@@ -1,0 +1,2 @@
+Ce fichier contiendra les sources tant que le fichier .bib n'est pas implémenté dans le code.
+
