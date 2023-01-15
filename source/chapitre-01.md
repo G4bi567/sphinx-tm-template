@@ -13,7 +13,7 @@ Le premier composant que j'ai créé est utilisé pour afficher un post
 ---
 width: 100%
 ---
-Une légende
+Exemple du Postlayer 
 ```
 
 ### Composants pour créer 
