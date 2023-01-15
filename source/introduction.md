@@ -34,7 +34,7 @@ L’une des principales caractéristiques de StackBlitz est la possibilité d’
 Ensuite, nous avons utilisé Vue.js[^Vue.js] qui est un framework JavaScript pour la création d’interfaces utilisateur et d’applications monopages. Vue.js utilise une architecture basée sur des composants, qui permet aux développeurs de créer des éléments d’interface utilisateur réutilisables, modulaires et autonomes. Chaque composant définit ses propres données, méthodes et modèles, qui peuvent être facilement composés et réutilisés dans l’application. L’une des principales caractéristiques de Vue.js est son système de réactivité, qui met automatiquement à jour l’interface utilisateur lorsque l’état du composant change. Cela facilite la création d’applications dynamiques et réactives qui se mettent à jour en temps réel.
 
 Finalement, j'utilise Quasar qui est un framework pour construire des interfaces utilisateur réactives et performantes avec Vue.js. Quasar est conçu pour fonctionner de manière transparente avec Vue.js et comprend un ensemble de fonctionnalités puissantes pour aider les développeurs à créer des applications Web et mobiles avec une apparence cohérente, y compris un riche ensemble de composants d’interface utilisateur, d’utilitaires et de directives prédéfinis. Le framework est particulièrement utile pour créer des applications réactives qui s’affichent et se comportent de manière cohérente sur différents appareils et tailles d’écran.
-#### La partie serveur et stockage
+#### Partie serveur et stockage
 
 ```{admonition} En cours de rédaction
 ---
