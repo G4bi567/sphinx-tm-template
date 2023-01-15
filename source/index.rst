@@ -12,14 +12,9 @@ Création d’un forum pour les étudiants du Collège du Sud
 
     introduction.md
     chapitre-01.md
-    chapitre-02.md
     todo.rst
 
-..  toctree::
-    :maxdepth: 2
-    :caption: Tutoriel Sphinx
 
-    tutoriel-sphinx/index.rst
 
 
 
