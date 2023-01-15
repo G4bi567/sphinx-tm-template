@@ -9,6 +9,13 @@ Les composants de mise en page définit la structure et la disposition des infor
 
 Le premier composant que j'ai créé est utilisé pour afficher un post 
 
+```{figure} figures/Exemple_Postlayer.png
+---
+width: 100%
+---
+Une légende
+```
+
 ### Composants pour créer 
 
 ## Organisation des fichiers
