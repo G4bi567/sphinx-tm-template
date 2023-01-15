@@ -34,7 +34,7 @@ width: 100%
 Exemple du CommentLayer 
 ```
 
-Ce composant est récursif. Un composant récursif en Vue.js est un composant qui appelle lui-même de manière répétée. Cela peut être utile pour afficher des données hiérarchiques, telles que ,ici, les commentaires des commentaires par exemple. Vous pouvez voir ici un c
+Ce composant est récursif. Un composant récursif en Vue.js est un composant qui appelle lui-même de manière répétée. Cela peut être utile pour afficher des données hiérarchiques, telles que ,ici, les commentaires des commentaires par exemple. Vous pouvez voir ici un diagramme qui explique comment fonctionne ce composant.
 
 ```{figure} figures/Diagramme_recursive.png
 ---
