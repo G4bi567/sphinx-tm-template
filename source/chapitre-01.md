@@ -45,6 +45,23 @@ Exemple du CommentLayer
 
 ### Composant pour créer une publication
 
+#### CreatePost
+
+Ce composant est utilisé pour créer une nouvelle publication. Il contient un 3 input, un pour le titre du problème, un selecteur afin d'en choisir la branche et un input pour le décrire et un bouon qui envoie les informations dans le stockage local pour l'instant.
+
+Analysons le code qui permet de l'envoyer dans le stackage local.
+
+```{figure} figures/Code_localStorage.png
+---
+width: 100%
+---
+Exemple du CommentLayer 
+```
+Tout d'abord, nous prenons toutes les publications. Puis nous trouvons l'id le plus grand et ajoutons 1. L'id sert d'identificateur pour supprimer une annonce, il faut alors que il soit unique, en cas d'erreur deux publications pourraient être supprimées.
+
+Ensuite, nous créons un object ,qui contient toutes les informations sur le créateur et les nouvelles variables nécessaires pour le componsant PostLayer, que nous le mettons dans l'array d'annonces.
+
+Finalment, nous enregistrons l'array dans le stockage local et remettons les variables de texte à 0.
 
 
 ## Organisation des fichiers
