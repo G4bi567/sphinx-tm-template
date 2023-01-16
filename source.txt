@@ -15,3 +15,8 @@ VEPSALAINEN, Vepsäläinen. «Scrimba - Interactive Screencasts Created in an In
 2017. Consulté le 15 février 2023. <https://survivejs.com/blog/scrimba-interview/>.
 
 Stackblitz's developers. «StackBlitz Documentation». Consulté le 15 février 2023. <https://developer.stackblitz.com/>.
+
+STOENESCU, Razvan. «Why Quasar?». Consulté le 16 février 2023. <https://quasar.dev/>.
+
+
+OLAWANLE, Joel. «An Introduction To Quasar Framework: Building Cross-Platform Applications». Smashing magazine, 2021. Consulté le 16 février 2023. <https://teams.microsoft.com/_#/school/conversations/G%C3%A9n%C3%A9ral?threadId=19:-P82fsC71HjnSBqa2G-Dqbedg53AC4uLF0SNDJleIvw1@thread.tacv2&ctx=channel>.
