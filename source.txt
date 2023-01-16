@@ -1,20 +1,17 @@
 Ce fichier contiendra les sources tant que le fichier .bib n'est pas implémenté dans le code.
 
 Documents web
-ACADEMIE DE ROUEN, Groupe risque majeur et environnement. «Les barrières d’étanchéité 
-des centrales nucléaires», 2009. Consulté le 14 février 2013. <http://rme.acrouen.fr/barrieres_nucleaire.htm>.
-
-ORGANISATION MONDIALE DE LA SANTE. «Les soins de santé primaire, maintenant plus 
-que jamais». In Rapport sur la santé dans le monde, 2008. Consulté le 13 décembre 2012. 
-<http://www.who.int/whr/2008/08_report_fr.pdf>.
 
 Vue.js's Team. «The Progressive JavaScript Framework».
 2023. Consulté le 15 février 2023. <https://vuejs.org/guide/introduction.html>.
-Vue.js's Team. «The Progressive JavaScript Framework».
-2023. Consulté le 15 février 2023. <https://vuejs.org/guide/introduction.html>.
-Vue.js's Team. «The Progressive JavaScript Framework».
-2023. Consulté le 15 février 2023. <https://vuejs.org/guide/introduction.html>.
-Vue.js's Team. «The Progressive JavaScript Framework».
-2023. Consulté le 15 février 2023. <https://vuejs.org/guide/introduction.html>.
+
+Compact Creative, «What Is Figma? a 101 Intro».
+Designshack, 2023. Consulté le 15 février 2023. <https://designshack.net/articles/software/what-is-figma-intro/>.
+
+HARALD BORGEN,Per. «What is Scrimba?».
+2021. Consulté le 15 février 2023. <https://scrimba.zendesk.com/hc/en-us/articles/360056395754-What-is-Scrimba-#:~:text=Scrimba%20is%20an%20interactive%20learning%20platform%20for%20frontend,CSS%2C%20JavaScript%2C%20React%20JS%2C%20UI%20design%2C%20and%20more.>.
+
+VEPSALAINEN, Vepsäläinen. «Scrimba - Interactive Screencasts Created in an Instant - Interview with Per Harald Borgen».
+2017. Consulté le 15 février 2023. <https://survivejs.com/blog/scrimba-interview/>.
 
 Stackblitz's developers. «StackBlitz Documentation». Consulté le 15 février 2023. <https://developer.stackblitz.com/>.

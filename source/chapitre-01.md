@@ -64,12 +64,5 @@ Ensuite, nous créons un object, qui contient toutes les informations sur le cr�
 Finalement, nous enregistrons l'array dans le stockage local et remettons les variables de texte à 0.
 
 
-## Explication des fichiers
-
-Je voudrais vous présenter les fichiers de mon projet
-
-### 
-
-
 
 
