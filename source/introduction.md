@@ -22,13 +22,13 @@ frameworks et de bibliothèques est nécessaire afin de faciliter le codage. Ce 
 
 #### Modélisation du frontend
 
-J'ai utilisé Figma[^figma] qui est un outil de conception et de prototypage d’interface basé sur le cloud qui permet aux équipes de collaborer et de concevoir des interfaces utilisateur pour les sites Web et les applications mobiles. Il vise à faciliter la création sur les interfaces pour les équipes de toutes tailles, réduisant ainsi le temps et les efforts nécessaires à la conception et au développement de produits numériques de haute qualité.
+J'ai utilisé Figma qui est un outil de conception et de prototypage d’interface basé sur le cloud qui permet aux équipes de collaborer et de concevoir des interfaces utilisateur pour les sites Web et les applications mobiles. Il vise à faciliter la création sur les interfaces pour les équipes de toutes tailles, réduisant ainsi le temps et les efforts nécessaires à la conception et au développement de produits numériques de haute qualité.
 
 ```{admonition} Vous pouvez accéder à la maquette à travers ce lien
 https://www.figma.com/file/9ZUc3VP0pH2g8zye4LUYCc/Gabriel_Forum?node-id=3853%3A973&t=Be8EbHZ1stm873WQ-1
 ```
 #### Programation du projet
-Premièrement, il nous a été proposé l'utilisation de StackBlitz[^stackblitz] qui est un environnement de développement en ligne pour la création d’applications Web. Il s’agit d’un environnement de développement intégré basé sur le Cloud qui permet aux développeurs d’écrire, de tester et de déboguer leur code dans le navigateur. Il prend en charge un large éventail de technologies de développement Web, notamment Javascript, Angular, React et surtout Vue.js, que je vous présenterais après. 
+Premièrement, il nous a été proposé l'utilisation de StackBlitz qui est un environnement de développement en ligne pour la création d’applications Web. Il s’agit d’un environnement de développement intégré basé sur le Cloud qui permet aux développeurs d’écrire, de tester et de déboguer leur code dans le navigateur. Il prend en charge un large éventail de technologies de développement Web, notamment Javascript, Angular, React et surtout Vue.js, que je vous présenterais après. 
 
 L’une des principales caractéristiques de StackBlitz est la possibilité d’exécuter des applications dans le navigateur, ce qui signifie que les développeurs peuvent voir leurs modifications en temps réel sans avoir à configurer un environnement de développement local. Cela le rend particulièrement utile pour le prototypage rapide et le développement de petits projets. De plus, StackBlitz offre une option pour partager et héberger facilement des applications, ce qui est utile pour faire la démonstration et tester des applications avec d’autres personnes. Tout en étant possible d'intégrer Git Hub, il est alors le meilleur environnement pour ce projet supervisé.
 
@@ -46,6 +46,3 @@ Cette section n'est pas encore commencé.
 
 ```
 
-[^figma]: https://designshack.net/articles/software/what-is-figma-intro/
-[^stackblitz]: https://developer.stackblitz.com/guides/user-guide/what-is-stackblitz
-[^Vue.js]: https://vuejs.org/guide/introduction.html#pick-your-learning-path

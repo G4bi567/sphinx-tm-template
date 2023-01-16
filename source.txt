@@ -1,56 +1,20 @@
 Ce fichier contiendra les sources tant que le fichier .bib n'est pas implémenté dans le code.
 
-Livres
-ARAMA, Maurice ; AYADA Souâd ; BARRY Michael et al. L’art, un miroir du sacré ?, Paris : 
-Albin Michel, 2009, 204 p.
-FAYON, Ruth ; VALLELIAN, Patrick. Auschwitz en héritage. De Karlsbad à Auschwitz, 
-itinéraire d’une jeune fille dans l’enfer de la Shoah. Neuchâtel : Delibreo, 2009, 206 p.
-LAGANDRE, Cédric. L’actualité pure. Essai sur le temps paralysé. Paris : P.U.F., 2009, 86 p.
-MENEGAZZO, Rossella. Le Japon. Trad. de l’italien par TRADITO, Todaro. Paris : Hazan, 
-2007, 384 p.
-Chapitres
-BAUDELAIRE, Charles. «L’Invitation au voyage», in Le Spleen de Paris. Petits Poèmes en 
-prose. Paris : L.G.F., 1972, rééd. 2010, p. 73-76.
-MENEGAZZO, Rossella. «Le panthéisme shintoïste», in Le Japon. Trad. de l’italien par 
-TRADITO, Todaro. Paris : Hazan, 2007, p. 174-180.
-ORGEL, Michel. «Montjoye Saint-Denis !», in Le livre des devises. Paris : Seuil, 2009, p. 279-
-280.
-Canton de Fribourg, DICS – S2 
-Guide cantonal du travail de maturité
-29
-DE PONCHARRA, Nicole. «Liberté de l’artiste et libération des formes», in ARAMA, Maurice ; 
-AYADA, Souâd ; BARRY, Michael et al. L’art, un miroir du sacré ? Paris : Albin Michel, 2009, 
-p. 185-195.
-Articles
-BOYER, Régis. «Le miracle islandais». In Religions et histoire, n° 32, mai-juin 2010, p. 18-21. 
-BRUNIER, Serge. «Trous noirs». In Science et vie, n° 1111, avril 2010, p. 54-71.
-GAILLARD, Philippe. «La marche vers les indépendances. Portraits des acteurs de l’Afrique 
-francophone libre et récit de l’inexorable processus qui a redessiné la carte du monde». In 
-Jeune Afrique, n° 2558, 17-23 janvier 2010, p. 22-32.
-Films et émissions de télévision
-BAGGIOLINI, Marie-Laure ; WEILHAMMER, Françoise. Filles de l’Islam et libérées. Genève : 
-TSR 1, 2010, 52’, émission Temps Présent du 16 décembre 2010.
-BERGMAN, Ingmar. La Flûte enchantée. Film d’opéra mettant en scène l’œuvre de Mozart, 
-Suède, 1974. Copie vidéo de 135 mn.
-PLATTNER, Patricia. Nicolas Bouvier : Le Hibou et la Baleine. Genève : Light Night et T.S.R., 
-1993. Film vidéo de 57 mn.
-Disques
-MOZART, Wolfgang A. Spatzenmesse K. 220, dans Missae Breves. Choeur Arnold 
-Schoenberg (Maîtrise Erwin Ortner) et Concentus Musicus Wien (Direction Nikolaus 
-Harnoncourt), Hamburg : Teldec, 1998, (coll. «Das Alte Werk»).
-Cédéroms et DVD
-AZENCOTT, Jacky et Robert. La Leçon d’anatomie, de la préhistoire à nos jours, Paris : 
-Bibliothèque nationale de France, Gallimard et Inserm, 1997. CD-ROM Mac-PC.
-DELOURME, Renaud. «Autour de la terre», in La terre vue du ciel, d’après l’œuvre 
-photographique de Yann Arthus-Bertrand, Paris : Montparnasse, 2004, DVD vidéo de 57 mn.
-TOWNSLEY, Graham (réal.). L’aube des mayas, National Geographic France, 2004. DVD 
-vidéo, 52 mn.
 Documents web
 ACADEMIE DE ROUEN, Groupe risque majeur et environnement. «Les barrières d’étanchéité 
 des centrales nucléaires», 2009. Consulté le 14 février 2013. <http://rme.acrouen.fr/barrieres_nucleaire.htm>.
-GABOR, Peter. «Typographie | Eléments d’histoire | Familles de caractères». In Design et typo 
-le Blog, 2006. Consulté le 14 février 2013. <http://paris.blog.lemonde.fr/2006/01/16/
-2006_01_typographie_ele/>.
+
 ORGANISATION MONDIALE DE LA SANTE. «Les soins de santé primaire, maintenant plus 
 que jamais». In Rapport sur la santé dans le monde, 2008. Consulté le 13 décembre 2012. 
 <http://www.who.int/whr/2008/08_report_fr.pdf>.
+
+Vue.js's Team. «The Progressive JavaScript Framework».
+2023. Consulté le 15 février 2023. <https://vuejs.org/guide/introduction.html>.
+Vue.js's Team. «The Progressive JavaScript Framework».
+2023. Consulté le 15 février 2023. <https://vuejs.org/guide/introduction.html>.
+Vue.js's Team. «The Progressive JavaScript Framework».
+2023. Consulté le 15 février 2023. <https://vuejs.org/guide/introduction.html>.
+Vue.js's Team. «The Progressive JavaScript Framework».
+2023. Consulté le 15 février 2023. <https://vuejs.org/guide/introduction.html>.
+
+Stackblitz's developers. «StackBlitz Documentation». Consulté le 15 février 2023. <https://developer.stackblitz.com/>.
