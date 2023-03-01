@@ -1,6 +1,6 @@
 class TMConfig:
 
-    title = u"Création d’un forum pour les étudiants du Collège du Sud"
+    title = u"Création d’un forum d'entraide pour les étudiants du Collège du Sud"
     first_name = 'Gabriel'
     last_name = 'Teixeira Dias'
     author = f'{first_name} {last_name}'

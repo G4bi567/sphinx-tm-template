@@ -3,7 +3,7 @@
     You can adapt this file completely to your liking, but it should at least
     contain the root `toctree` directive.
 
-Création d’un forum pour les étudiants du Collège du Sud
+Création d’un forum d'entraide pour les étudiants du Collège du Sud
 ============================
 
 ..  toctree::
