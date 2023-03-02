@@ -3,6 +3,10 @@
 ## Motivation personnelle
 
 Pour commencer, la programmation m'a en effet toujours intéressé, mais je me trouvais trop passif dans l'apprentissage d'un langage. Je voulais aussi faire un projet qui puisse aider des personnes. Grâce à ces motivations, j'ai pu choisir un travail dans lequel je m'impliquerais complètement.
+
+See {cite:p}`parent:vue-infos` for an introduction to non-standard analysis.
+
+
 ## Présentation du projet
 
 L'objectif de ce projet est de créer un espace de discussions. Le forum fournirait une plate-forme surtout pour les élèves pour se connecter et résoudre des difficultés, collaborer, partager des idées et discuter de sujets liés à l'école. 
