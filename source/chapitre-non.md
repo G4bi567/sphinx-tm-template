@@ -9,7 +9,7 @@ Les composants de mise en page définissent la structure et la disposition des i
 
 Ce composant fut le premier créé, il permet grâce à une array d'objets de faire une publication. L'array contient le titre de la publication, la date, le nom de profil du créateur, la description du problème, la branche associée au problème, la photo de profil du créateur, l'id de la publication qui permet de l'identifier et les commentaires sous forme de array. Vous pouvez voir un exemple de ce composant ci-dessous.
 
-```{figure} figures/Exemple_Postlayer.png
+```{figure} figures/CreatePost_composant.png
 ---
 width: 100%
 ---

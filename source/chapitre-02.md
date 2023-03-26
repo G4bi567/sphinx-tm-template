@@ -47,11 +47,13 @@ La fonctionnalité la plus importante de ce site est la possibilité de créer u
 L’option de supprimer est très importante. Afin dans le futur, lors d’une vraie utilisation de la connexion avec un compte, il est possible de supprimer les publications personnelles et non toutes. il est possible de supprimer toutes les publications, même si l’ utilisateur ne les a pas écrites. Cette option n’est utilisée que pour les publications et non les commentaires. 
 ### Filtrage des publications
 Afin d’améliorer l’usage du forum, des actions filtrent les publications. Par exemple, en appuyant sur le nom d’une personne dans une publication, il est possible de voir toutes les publications de cet utilisateur. La même fonctionnalité s’applique à la branche de la publication, dans le but de voir toutes les publications liées à cette branche précise. Pour plus de filtrage, une liste des branches déroulante à gauche est présente, en vue de faciliter l’accès à toutes les branches très rapidement. Une autre fonction de filtrage est aussi présente pour le nombre de publication affichée une page. Ce nombre est fixé à 5. Si ce nombre est dépassé, alors il apparaît au bas de la page, dans la pagination, le nombre de pages nécessaires afin de pouvoir afficher toutes les publications.
-### Suivis
+###Suivis
 La page Suivis permet de voir les publications que l’utilisateur a aimé grâce au bouton cœur présent sur les publications. Ceci permet de suivre une publication, si la réponse à la problématique intéresse l'utilisateur.
 ### Liens utiles 
-PARler 
-### Tiroirs 
-Permet dourvrir les trucs de cotés
+Dans le but d’aider les étudiants, le site donne accès à des outils intéressants. Ils sont accessible sous forme de liens url dans le tiroir à droite. Voici un exemple :
+ 
+Les tiroirs sont des listes qui peuvent être cachées. Ils permettent une manière de fournir des informations dans un site Web qui est dynamique est simple à comprendre.  
+	
+
 
 	
