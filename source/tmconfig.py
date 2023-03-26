@@ -5,10 +5,10 @@ class TMConfig:
     last_name = 'Teixeira Dias'
     author = f'{first_name} {last_name}'
     year = u'2023'
-    month = u'Janvier'
+    month = u'Mars'
     seminary_title = u'Développement Web'
     tutor = u"Cédric Donner et Johan Jobin"
-    release = "Version intermédiaire"
+    release = "Version finale"
     repository_url = "https://github.com/{quasar-projet-true-form}"
 
     @classmethod
