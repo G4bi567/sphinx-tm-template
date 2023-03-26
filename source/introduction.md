@@ -1,5 +1,5 @@
 # Introduction au travail
-##Présentation du projet
+## Présentation du projet
 
 Au commencement d’Internet, le développement Web s’est défini par la création de sites statiques simples à l’aide de HTML et CSS de base. Cependant, à mesure que la technologie a progressé, le développement Web est devenu plus complexe et sophistiqué. Les développeurs Web utilisent aujourd’hui une variété d’outils et de technologies pour créer des sites Web dynamiques et interactifs qui peuvent être utilisés sur n’importe quel appareil.
 
