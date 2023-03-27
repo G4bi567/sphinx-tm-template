@@ -170,36 +170,47 @@ Dans ce sous-chapitre, il y a une analyse approfondie sur tous les fichiers du p
 - src/stores/index.js
     * Ce fichier permet d'intégré le magasin de Pinia. 
 - src/stores/utilisateur.js
-    * 
+    * Ce store est utilisé afin de gérer les données en rapport avec l’utilisateur. Il contient par exemple la liste « followed » qui garde l’id des publications suivies.
+    * Pour les fonctions, ce store possède pour commencer deux fonctions opposées. La fonction « loginVariable » prend en paramètre « location » l’endroit où les données sont recherchées, ici le local Storage. Cette fonctionne permet premièrement de fermer la page « LogInPage », puis enregistre les données de l’utilisateur dans le local Storage. Finalement, elle enregistre la photo de profil de base dans le localStorage. Ensuite, la fonction opposée « logOut » qui donne la possibilité, cette fois-ci, d’effacer les données sur l’utilisateur et d’ouvrir la page « LogInPage ». Elle utilise le même paramètre « location ».
+    * Ensuite, il y a une fonction « changePpProfil». Cette fonction change la photo de profil de l’utilisateur par l’url fournie dans le paramètre « NewLink », cette url s’enregistre ainsi dans le local Storage.
+    * La fonction la plus importante dans ce store est la fonction «profilload ». Cette fonction charge les données de l’utilisateur dans toutes les pages. Voici la fonction :
+    ```{figure} figures/code_profilLoad.png
+    ---
+    width: 50%
+    ---
+    Code de la fonction «profilload»
+    ```
+    * Lorsque l’utilisateur charge une page, cette fonction se lance. Elle prend les données sur le profil enregistrées dans le local Storage. Si cette variable est vide, la page « LogInPage » s’ouvre directement, ainsi l’utilisateur peut fournir les données. Sinon, les variables globales sont définies.
+
 - src/App.vue
-
-•	.editorconfig
-o	Ce fichier définit les styles de codage et les conventions à utiliser dans les éditeurs. Il maintient la cohérence du projet.
-•	.eslintignore
-o	Ce fichier est utilisé afin d’ignorer des fichiers spécifiques.
-•	.eslintrc.js
-o	Ce fichier configure les règles ESLint, qui permettent aussi de garder une cohérence dans le projet.
-•	.gitignore
-o	Ce fichier définit les fichiers qui ne doivent pas être suivis par Git. 
-•	.prettierrc
-o	Ce fichier permet de formatter le code en utilisant Prettier. Il assure un formatage automatique en fonction d’un ensemble de règles.
-•	.stackblitzrc
-o	Ce fichier permet de configurer Stackblitz. Il permet d’assurer des paramètres, des dépendances et de préférences si nécessaire. 
-•	Index.html
-o	Ceci est le fichier HTML principale. 
-•	jsconfig.json
-o	Ce fichier est utilité pour configurer Javascript dans Visual Studio Code.
-•	package-lock.json
-o	Ce fichier spécifie la version exacte à installer pour chaque dépendances.
-•	package.json
-o	Ce fichier fournit toutes les dépendances à installer.
-•	postcss.config.js
-o	Ce fichier configure PostCSS. 
-•	quasar.config.js
-o	Ce fichier configure Quasar, comme les paramètres, les thèmes, les plugins, etc…
-
-•   Read.me
-o   Ce fichier contient des informations importantes sur le projet. Il est utile pour les utilisateurs et les développeurs, car il permet de comprendre rapidement le code. Il comporte un bref résumé du programme, les instructions pour l’installation et la mise en route du projet. Puis il possède aussi la manière de l’utiliser. 
-•   Yarn.lock
+    * Ce fichier est la racine de toute l’application Quasar.
+- .editorconfig
+    * Ce fichier définit les styles de codage et les conventions à utiliser dans les éditeurs. Il maintient la cohérence du projet.
+- .eslintignore
+    * Ce fichier est utilisé afin d’ignorer des fichiers spécifiques.
+- .eslintrc.js
+    * Ce fichier configure les règles ESLint, qui permettent aussi de garder une cohérence dans le projet.
+- .gitignore
+    * Ce fichier définit les fichiers qui ne doivent pas être suivis par Git. 
+- .prettierrc
+    * Ce fichier permet de formatter le code en utilisant Prettier. Il assure un formatage automatique en fonction d’un ensemble de règles.
+- .stackblitzrc
+    * Ce fichier permet de configurer Stackblitz. Il permet d’assurer des paramètres, des dépendances et de préférences si nécessaire. 
+-index.html
+    * Ceci est le fichier HTML principale. 
+- jsconfig.json
+    * Ce fichier est utilité pour configurer Javascript dans Visual Studio Code.
+- package-lock.json
+    * Ce fichier spécifie la version exacte à installer pour chaque dépendances.
+- package.json
+    * Ce fichier fournit toutes les dépendances à installer.
+- postcss.config.js
+    * Ce fichier configure PostCSS. 
+- quasar.config.js
+    * Ce fichier configure Quasar, comme les paramètres, les thèmes, les plugins, etc…
+- Read.me
+    * Ce fichier contient des informations importantes sur le projet. Il est utile pour les utilisateurs et les développeurs, car il permet de comprendre rapidement le code. Il comporte un bref résumé du programme, les instructions pour l’installation et la mise en route du projet. Puis il possède aussi la manière de l’utiliser. 
+- Yarn.lock
+    * Ce fichier est créé par Yarn. L’objectif de ce fichier est de permettre aux développeurs d’utiliser la même version de chaque dépendance, évitant les problèmes.
 
 

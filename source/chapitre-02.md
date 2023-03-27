@@ -33,10 +33,7 @@ Yarn est un gestionnaire de paquets pour JavaScript. Il a été créé par Faceb
 5.	Installer les indépendances avec le terminal en écrivant « yarn install ».
 
 
-6.	Installer Quasar en exécutant la commande suivante dans le terminal. « npm install -g @quasar/cli »
-
-
-7.	Pour accéder au projet, il faut exécuter « quasar dev » dans le terminal. Cela démarrera le serveur de développement. Finalement, un nouvel onglet s’ouvre. Cependant si rien ne s’ouvre, il faut appuyer sur « ctrl +click » dans le terminal sur http://localhost... .
+6.	Pour accéder au projet, il faut exécuter « quasar dev » dans le terminal. Cela démarrera le serveur de développement. Finalement, un nouvel onglet s’ouvre. Cependant si rien ne s’ouvre, il faut appuyer sur « ctrl +click » dans le terminal sur http://localhost... .
 
 ## Présentation des principales fonctionnalités 
 ### Connection et déconnection
