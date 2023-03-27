@@ -52,7 +52,7 @@ La page Suivis permet de voir les publications que l’utilisateur a aimé grâc
 ### Liens utiles 
 Dans le but d’aider les étudiants, le site donne accès à des outils intéressants. Ils sont accessible sous forme de liens url dans le tiroir à droite. Voici un exemple :
  
-Les tiroirs sont des listes qui peuvent être cachées. Ils permettent une manière de fournir des informations dans un site Web qui est dynamique est simple à comprendre.  
+Les tiroirs sont des listes qui peuvent être cachées. Ils permettent une manière de fournir des informations dans un site Web qui est dynamique est simple à comprendre.
 	
 
 
