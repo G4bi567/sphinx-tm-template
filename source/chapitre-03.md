@@ -145,42 +145,34 @@ Dans ce sous-chapitre, il y a une analyse approfondie sur tous les fichiers du p
     ---
     width: 50%
     ---
-    Voici le code dans le fichier
+    Voici la première partie du code dans la fonction «addComment»
     ```
     * Cette fonction prend pour commencer la variable « type ». Cette variable permet de définir si la fonction ajoute un commentaire ou une publication. Ensuite, la variable « id » est utile pour l’ajout d’un commentaire car elle permet de savoir dans quelle publication le commentaire doit être ajoutée. Cependant lors de l’ajout d’une publication, elle n’est d’aucune utilité. La variable « comment » est définit sur les pages de l’appel de la fonction. Elle contient les informations, comme la description écrite si c’est une création de commentaire. Si c’est une création de publication, elle contiendra en plus le titre et la branche. Les variables « nameprofil » et « pp_profil » sont définies lors de l’appel de la fonction avec l’utilisation du store utilisateur. Puis toutes les informations sont ajoutées dans l’object comment. Finalement, les conditions « if » suivantes permettent de définir la liste sur laquelle on veut travailler. Lorsque l’utilisateur veut ajouter un commentaire, la fonction définit « this.commentstomodify » en tant que les commentaire de la publication choisie , dans le but de de trouver l’id du nouveau commentaire à ajouter. Si cette fois l’utilisateur veut ajouter une publication, « this.commentstomodify » est définit comme la liste de toutes le publications, car cette fois il faut trouver quelle id il faut donner à la nouvelle publications. 
     * La partie suivante permet de trouver le id du commentaire ou de la publication.
+    ```{figure} figures/partie_2_addComment.png
+    ---
+    width: 50%
+    ---
+    Voici la deuxième partie du code dans la fonction «addComment»
+    ```
     * Tout d’abord, la clé « id » dans l’object « comment » reçoit comme valeur 0. Puis, la première condition contrôle la taille de la liste. Si la liste est vide, le id sera d’office 0. Sinon, lorsque la liste n’est pas vide, une boucle compare le id des publications ou des commentaires présents.  Lorsque l’id est plus grand que l’id du nouveau commentaire ou de la nouvelle publication, l’id de la nouvelle publication ou du nouveau commentaire est définit par l’id trouvé + 1. Après avoir traversé toute la liste, l’id recherché est définit. 
-    * La dernière partie permet d’enregistrer la nouvelle publication  ou le nouveau commentaire.
-    * Comme montré ci-dessus, le code a deux manières de définir la variable « commentsList ». Si c’est un commentaire, le nouveau commentaire est ajouté dans la bonne publications, et si c’est un publication , celle-ci est ajoutée dans la liste des publications. Pour finir, la nouvelle liste est ajoutée dans le local Storage, car la variable location est « localStorage ». 
+    * La dernière partie permet d’enregistrer la nouvelle publication ou le nouveau commentaire.
+    ```{figure} figures/partie_3_addComment.png
+    ---
+    width: 50%
+    ---
+    Voici la troisième partie du code dans la fonction «addComment»
+    ```
+    * Comme montré ci-dessus, le code a deux manières de définir la variable « commentsList ». Si c’est un commentaire, le nouveau commentaire est ajouté dans la bonne publications, et si c’est un publication , celle-ci est ajoutée dans la liste des publications. Pour finir, la nouvelle liste est ajoutée dans le local Storage, car la variable location est « localStorage ».
+    * La fonction suivante s’appelle « deleteComment ».  Celle-ci prend en paramètre le id de la publication que l’utilisateur veut supprimer et elle prend aussi la destination, c’est à dire le local Storage. Elle donne la possibilité de supprimer la publication choisie.
+    * La dernière fonction « resetComment » prend en paramètre la destination, qui est définit comme « localStorage ». Elle efface la variable contenant les listes des publications dans le localStorage.
+
 - src/stores/index.js
-    * La fonction store une fonction wrapper qui permet à l'instance de magasin d'être correctement intégrée à QuasarLa fonction prend un paramètre optionnel ssrContext, qui n'est pas utilisé dans cette implémentation particulière.
-    * Dans la fonction store, une nouvelle instance de magasin Pinia est créée à l'aide de la fonction createPinia du module pinia. Pinia est une solution de gestion d'état légère et intuitive pour Vue.js qui suit l'API de composition de Vue 3.
-o	
-o	Enfin, l'instance de magasin Pinia est renvoyée par la fonction store. Le magasin exporté peut être utilisé pour stocker et gérer l'état dans une application Vue.js, et il est accessible depuis les composants Vue à l'aide de la fonction useStore fournie par Pinia.
-o	
-o	import { store } from 'quasar/wrappers'
-o	import { createPinia } from 'pinia'
-o	
-o	/*
-o	 * Si vous ne construisez pas en mode SSR, vous pouvez
-o	 * exporter directement l'instanciation du magasin ;
-o	 *
-o	 * La fonction ci-dessous peut également être asynchrone ; utilisez soit
-o	 * async/await ou retourner une promesse qui se résout
-o	 * avec l'instance du magasin.
-o	 */
-o	
-o	export default store((/* { ssrContext } */)) => {
-o	  const pinia = createPinia()
-o	
-o	  // Vous pouvez ajouter des plugins Pinia ici
-o	  // pinia.use(SomePiniaPlugin)
-o	
-o	  return pinia
-o	})
-•	src/stores/index.js
-o	reset pub
-•	src/App.vue
+    * Ce fichier permet d'intégré le magasin de Pinia. 
+- src/stores/utilisateur.js
+    * 
+- src/App.vue
+
 •	.editorconfig
 o	Ce fichier définit les styles de codage et les conventions à utiliser dans les éditeurs. Il maintient la cohérence du projet.
 •	.eslintignore

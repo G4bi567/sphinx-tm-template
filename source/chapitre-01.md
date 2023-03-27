@@ -1,18 +1,12 @@
 # Outils utilisés pour la création du projet
 
- 
 ## Modélisation du front-end
-
-
 
 Le premier outil utilisé afin de commencer le projet est Figma. Figma est un outil de conception qui permet d’élaborer des interfaces utilisateur pour les sites Web et les applications mobiles. Il vise à faciliter la création sur les interfaces pour les équipes de toutes tailles, réduisant ainsi le temps et les efforts nécessaires à la conception et au développement de produits numériques de haute qualité.
 
 Dans le but de créer un site Web agréable et intéressant, le design UX est un des facteurs le plus importants à prendre en compte. À savoir, le design UX est connu sous le nom de design utilisateur. Cela consiste en la conception de produits numériques en mettant l’accent sur l’expérience utilisateur. Il faut mettre à disposition des outils et une interface intuitive et facile à utiliser en vue de satisfaire les besoins des utilisateurs. Le prototypage du projet est alors très important afin d’établir tous les points importants pour le projet. Ce projet étant fait dans l’intention d’être utilisé par les étudiants, il se doit d’avoir toutes les fonctionnalités possiblement utiles.
 
-Quora - Wikipedia
-What is Quora? – Quora Help Center
-What Is Quora? Everything a Beginner Needs To Know (g2.com)
-pour la création du modèle, le site Quora a été utilisé comme inspiration. Quora étant une plateforme de questions-réponses, elle s’adapte exactement au but du projet. Les points importants ont vite été repérés. Comme par exemple, il s’agissait de faire un site sombre qui s’adapte plus à l’usage quotidien ou encore un onglet accessible de façon à accéder facilement au groupe de branche. Un travail minutieux et complet a été fait sur la modélisation afin d’avoir une base solide et qui pourra être utilisée pendant toute la partie de programmation.
+Pour la création du modèle, le site Quora a été utilisé comme inspiration. Quora étant une plateforme de questions-réponses, elle s’adapte exactement au but du projet. Les points importants ont vite été repérés. Comme par exemple, il s’agissait de faire un site sombre qui s’adapte plus à l’usage quotidien ou encore un onglet accessible de façon à accéder facilement au groupe de branche. Un travail minutieux et complet a été fait sur la modélisation afin d’avoir une base solide et qui pourra être utilisée pendant toute la partie de programmation.
 
 ```{admonition} Vous pouvez accéder à la maquette en format PDF en annexe à ce rapport, amener à l’annexe
 ```
