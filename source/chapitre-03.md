@@ -17,7 +17,7 @@ Dans ce sous-chapitre, il y a une analyse approfondie sur tous les fichiers du p
     
      ```{figure} figures/Fonction_isAvailable.png
     ---
-    width: 40%
+    width: 30%
     ---
     La fonction « isAvailable ». 
     ```

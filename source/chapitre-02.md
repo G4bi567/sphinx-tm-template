@@ -1,16 +1,16 @@
 # Guide utilisateur
 ## Installation et mise en route
 
-Afin de pouvoir lancer le projet sur un ordinateur, il faut respecter une série d’étapes à suivre. Si Visual Studio Code est déjà installé, le numéro 1 n’a pas besoin d’être fait. Si Node.Js l’est aussi, le numéro 2 n’a non plus besoin d’être fait.
+Afin de pouvoir lancer le projet sur un ordinateur, il faut respecter une série d’étapes. Si Visual Studio Code est déjà installé, le numéro 1 n’a pas besoin d’être fait. Si Node.Js l’est aussi, le numéro 2 n’a non plus besoin d’être fait.
 
-1.	Télécharger et installer Visual Studio code, le fichier .exe peut être retrouvé sur le site officiel : https://code.visualstudio.com/ , il faut choisir la version adaptée au système d’exploitation personnelle, comme par exemple Windows, MacOs, Linux.
+1.	Télécharger et installer Visual Studio code. Le fichier .exe peut être retrouvé sur le site officiel : https://code.visualstudio.com/ ; il faut choisir la version adaptée au système d’exploitation de l'ordinateur, comme par exemple Windows, MacOs, Linux.
 
-Visual Studio Code est un logiciel libre de Microsoft pour Windows, Linux et macOS. Il est conçu pour aider les développeurs à créer, déboguer et déployer des applications logicielles. Il peut s’abréger en VS Code. Celui-ci offre des fonctionnalités telles que l’achèvement du code, la prise en charge du débogage, la refactorisation du code, l’intégration git, la prise en charge des extensions, etc. Il prend également en charge de nombreux langages de programmation, notamment C++, Python, HTML, CSS, JavaScript, TypeScript, etc. Puis, un des points les plus avantageux est le grand nombre d’extensions. Ceci permet aux développeurs de personnaliser leur environnement de travail et d’améliorer leurs productivités.
+Visual Studio Code, souvent abrégé en VSCode, est un logiciel libre de Microsoft pour Windows, Linux et MacOS. Il est conçu pour aider les développeurs à créer, déboguer et déployer des applications logicielles. VSCode offre des fonctionnalités telles que la complétion de code, la prise en charge du débogage, la refactorisation du code, l’intégration de systèmes de contrôle tel que Git, la prise en charge des extensions, etc. Il prend également en charge de nombreux langages de programmation, notamment C++, Python, HTML, CSS, JavaScript, TypeScript, etc. Un des points les plus avantageux est le grand nombre d’extensions, qui permet aux développeurs de personnaliser leur environnement de travail et d’améliorer leurs productivités.
 
 2.	Télécharger et installer Node.Js, grâce au lien suivant : https://nodejs.org/en/download.
-Pendant l’installation, il faut accepter des modifications en tant qu’administrateur.
+Pour l’installation, il faut accepter des modifications en tant qu’administrateur.
 
-Tout d’abord, Node.js est un environnement d’exécution JavaScript côté serveur. Sans ce framework, il serait impossible pour les développeurs d’interpréter du code Java en dehors du navigateur. Ensuite avec la distribution de Node.js vient intégrer NPM. NPM, ou Node Package Manager, est un gestionnaire de paquets pour Node.js qui permet aux développeurs de gérer facilement les dépendances de leur projet. NPM facilite l’installation, la mise à jour et la suppression des paquets et des modules nécessaires à un projet. Cela permet aux développeurs de créer des applications de bureau multiplateformes à l’aide de technologies Web telles que HTML, CSS et JavaScript.
+Node.js est un environnement d’exécution JavaScript côté serveur. Grâce à ce framework, les développeurs disposent d’un interpréter du code JavaScript en dehors du navigateur. La distribution de Node.js intègre NPM, ou Node Package Manager. NPM est un gestionnaire de paquets pour Node.js qui permet aux développeurs de gérer facilement les dépendances de leur projet. NPM facilite l’installation, la mise à jour et la suppression des paquets et des modules nécessaires à un projet. Cela permet aux développeurs de créer des applications de bureau multiplateformes à l’aide de technologies Web telles que HTML, CSS et JavaScript.
 
 3.	Faire une vérification pour savoir si Node.js et NPM sont correctement installés. Il faut ouvrir le terminal sur Visual Studio Code en allant sur Affichage > Terminal ou Terminal > Nouveau Terminal. Puis il faut écrire les deux commandes suivantes séparement et ensuite, il faut appuyer sur enter. 
 	```bash
@@ -23,17 +23,17 @@ Tout d’abord, Node.js est un environnement d’exécution JavaScript côté se
 	npm -v
 
 	```
-
+	Ces deux commandes permettent de donner la version de Node.js et NPM.
 
 4.	Installer yarn avec le terminal en écrivant « npm install --global yarn » et en appuyant sur enter.
 
-Yarn est un gestionnaire de paquets pour JavaScript. Il a été créé par Facebook. Il est compatible avec npm et Node.js. Un des avantages par rapport à npm est le fait qu’il arrive à installer les dépendances et les paquets plus rapidement. Il a été mis en place dans le but de répondre à certaines limitations et des problèmes de performances de npm.
+Yarn est un gestionnaire de paquets pour JavaScript, créé par Facebook, et est compatible avec NPM et Node.js. Un des avantages par rapport à NPM est le fait qu’il arrive à installer les dépendances et les paquets plus rapidement. 
 
 
 5.	Installer les indépendances avec le terminal en écrivant « yarn install ».
 
 
-6.	Pour accéder au projet, il faut exécuter « quasar dev » dans le terminal. Cela démarrera le serveur de développement. Finalement, un nouvel onglet s’ouvre. Cependant si rien ne s’ouvre, il faut appuyer sur « ctrl +click » dans le terminal sur http://localhost... .
+6.	Pour accéder au projet, il faut exécuter « quasar dev » dans le terminal. Cela démarre le serveur de développement. Finalement, un nouvel onglet s’ouvre. Cependant si rien ne s’ouvre, il faut appuyer sur « ctrl +click » dans le terminal sur http://localhost... .
 
 ## Présentation des principales fonctionnalités 
 ### Connection et déconnection
