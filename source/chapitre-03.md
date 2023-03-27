@@ -8,7 +8,7 @@ Dans ce sous-chapitre, il y a une analyse approfondie sur tous les fichiers du p
     * Le composant permet à l’utilisateur de poser une question, c’est à dire de créer sa publication. Ce composant permet de recueillir des données. 
     ```{figure} figures/CreatePost_composant.png
     ---
-    width: 70%
+    width: 30%
     ---
     Exemple du composant « CreatePost ». 
     ```
@@ -17,7 +17,7 @@ Dans ce sous-chapitre, il y a une analyse approfondie sur tous les fichiers du p
     
      ```{figure} figures/Fonction_isAvailable.png
     ---
-    width: 60%
+    width: 40%
     ---
     La fonction « isAvailable ». 
     ```
@@ -26,14 +26,14 @@ Dans ce sous-chapitre, il y a une analyse approfondie sur tous les fichiers du p
     * Le composant actuelle permet de créer un modèle pour les publications et pour les commentaires. 
      ```{figure} figures/comment.png
     ---
-    width: 70%
+    width: 40%
     ---
     Exemple du composant « CreatePost ». 
     ```
     * Ce composant prend en paramètre les données fournies par le composant « CreatePost.vue », vu précédemment. Premièrement, Il affiche, sur la partie supérieure droite, la photo de profil et le nom de l’utilisateur. Cette partie est cliquable et permet d’envoyer l’utilisateur dans la page du profil cliqué. Ensuite, sur la partie supérieure gauche, un menu déroulant est présent. Lorsque ce menu est cliqué, une option « supprimer » apparaît. Celle-ci donne la possibilité de supprimer la publication. Puis, la partie du centre est composé du nom de la branche, du titre de la publication et la description du problème. Le nom de la branche est cliquable et emmène l’utilisateur dans une page dédiée aux publications avec la branche choisie. Sur la partie inférieure, se trouve des fonctionnalités plus interactives. Tout d’abord, un bouton affiche la partie des commentaires. Puis, un bouton cœur permet d’enregistrer une publication dans les suivis. 
     ```{figure} figures/comment_partie_commentaire.png
     ---
-    width: 70%
+    width: 40%
     ---
     Exemple du composant « CreatePost ». 
     ```
@@ -41,7 +41,7 @@ Dans ce sous-chapitre, il y a une analyse approfondie sur tous les fichiers du p
     * La spécialité de ce composant est qu’il est récursif. Un composant récursif est un composant qui s’appelle elle-même. Ainsi dans cette situation, cela permet de faire des publications avec des commentaires qui ont des commentaires, etc… Voici un schéma pour mieux comprendre les fonctions récursives.
     ```{figure} figures/Diagramme_recursive.png
     ---
-    width: 50%
+    width: 40%
     ---
     Exemple du comment.vue
     ```
@@ -54,7 +54,7 @@ Dans ce sous-chapitre, il y a une analyse approfondie sur tous les fichiers du p
     * Le MainLayout est la base du projet. Ce fichier consiste visuellement en la barre de navigation, affichée en haut du site. 
     ```{figure} figures/MainLayout.png
     ---
-    width: 50%
+    width: 60%
     ---
     Exemple du MainLayout.vue
     ```
@@ -64,7 +64,7 @@ Dans ce sous-chapitre, il y a une analyse approfondie sur tous les fichiers du p
     * Deux autres boutons sont sur les extrémités. Ils permettent d’ouvrir des « drawers », c’est-à-dire des tiroirs montrés ci-dessous:
     ```{figure} figures/exemple_tiroir_branche.png
     ---
-    width: 40%
+    width: 20%
     ---
     Exemple du tiroir des branches
     ```
@@ -72,7 +72,7 @@ Dans ce sous-chapitre, il y a une analyse approfondie sur tous les fichiers du p
     * La suite du code permet d’afficher alors les composants et les pages principales du site. Cette fonctionnalité est établie grâce à des conditions qui dépendent de variables qui changent lorsque l’utilisateur accède aux pages du site.
     ```{figure} figures/router_filtre.png
     ---
-    width: 50%
+    width: 40%
     ---
     Code pour faire apparaître les pages
     ```
@@ -84,7 +84,7 @@ Dans ce sous-chapitre, il y a une analyse approfondie sur tous les fichiers du p
     * Voici le design de celle si : 
     ```{figure} figures/error_page.png
     ---
-    width: 50%
+    width: 40%
     ---
     Code pour faire apparaître les pages
     ```
@@ -93,14 +93,14 @@ Dans ce sous-chapitre, il y a une analyse approfondie sur tous les fichiers du p
     * Cette page est la page principale du site. Elle affiche, grâce au composant « LayerPostComment.vue », toutes les publications. La page contient 4 options d’affichage. Voici le code pour le filtrage des publications :
     ```{figure} figures/fonction_filtrage_publication.png
     ---
-    width: 50%
+    width: 40%
     ---
     Code pour filtrer toutes les publications
     ```
     * Cette méthode de filtrage est assez facile à comprendre. Lorsque le site se charge la variable « filteroptiontype » est égal à null, alors il va s’afficher toutes les publications triées dans l’ordre chronologique, car il n’y a aucun filtre activé. Voici un exemple de la page sans filtre.
     ```{figure} figures/Index_page_exemple.png
     ---
-    width: 50%
+    width: 40%
     ---
     Exemple de la page "IndexPage"
     ``` 
@@ -112,7 +112,7 @@ Dans ce sous-chapitre, il y a une analyse approfondie sur tous les fichiers du p
     * La page LogIn est la première page que l’utilisateur voit. C’est un formulaire fictif, car ce n’est pas réellement une création de compte, mais une manière de pouvoir avoir les noms des utilisateurs lors de la création d’une publication ou d’un commentaire. Voici ce que le site affiche.
     ```{figure} figures/exemple_page_login.png
     ---
-    width: 50%
+    width: 40%
     ---
     Exemple de la page "LogInPage"
     ```
@@ -121,7 +121,7 @@ Dans ce sous-chapitre, il y a une analyse approfondie sur tous les fichiers du p
     * La page paramètre est une page très utile pour l’utilisateur. Voici à quoi elle ressemble.
     ```{figure} figures/exemple_parametre.png
     ---
-    width: 50%
+    width: 40%
     ---
     Exemple d'un page "settingsPage"
     ```
@@ -143,7 +143,7 @@ Dans ce sous-chapitre, il y a une analyse approfondie sur tous les fichiers du p
     * La fonction suivante « addComment » prend plusieurs paramètres en compte. Voici un bout de la fonction :
     ```{figure} figures/partie_1_addComment.png
     ---
-    width: 50%
+    width: 40%
     ---
     Voici la première partie du code dans la fonction «addComment»
     ```
@@ -151,7 +151,7 @@ Dans ce sous-chapitre, il y a une analyse approfondie sur tous les fichiers du p
     * La partie suivante permet de trouver le id du commentaire ou de la publication.
     ```{figure} figures/partie_2_addComment.png
     ---
-    width: 50%
+    width: 40%
     ---
     Voici la deuxième partie du code dans la fonction «addComment»
     ```
@@ -159,7 +159,7 @@ Dans ce sous-chapitre, il y a une analyse approfondie sur tous les fichiers du p
     * La dernière partie permet d’enregistrer la nouvelle publication ou le nouveau commentaire.
     ```{figure} figures/partie_3_addComment.png
     ---
-    width: 50%
+    width: 40%
     ---
     Voici la troisième partie du code dans la fonction «addComment»
     ```
@@ -176,7 +176,7 @@ Dans ce sous-chapitre, il y a une analyse approfondie sur tous les fichiers du p
     * La fonction la plus importante dans ce store est la fonction «profilload ». Cette fonction charge les données de l’utilisateur dans toutes les pages. Voici la fonction :
     ```{figure} figures/code_profilLoad.png
     ---
-    width: 50%
+    width: 40%
     ---
     Code de la fonction «profilload»
     ```

@@ -10,7 +10,7 @@ Dans le but de créer un site Web agréable et intéressant, le design UX est un
    
 ```{figure} figures/comparaison.png
 ---
-width: 50%
+width: 30%
 ---
 Comparaison 
 ```
