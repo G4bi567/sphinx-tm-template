@@ -14,6 +14,7 @@ Création d’un forum d'entraide pour les étudiants du Collège du Sud
     chapitre-01.md
     chapitre-02.md
     chapitre-03.md
+    conclusion.md
     references.rst
 
 
