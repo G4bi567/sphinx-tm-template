@@ -5,14 +5,15 @@ class TMConfig:
     last_name = 'Teixeira Dias'
     author = f'{first_name} {last_name}'
     year = u'2023'
-    month = u'Mars'
+    month = u'Avril'
+    day = u'3'
     seminary_title = u'Développement Web'
     tutor = u"Cédric Donner et Johan Jobin"
-    release = "Version finale"
+    release = ""
     repository_url = "https://github.com/{quasar-projet-true-form}"
 
     @classmethod
     def date(cls):
-        return cls.month + " " + cls.year
+        return f"Le {cls.day} {cls.month.lower()} {cls.year}"
 
 tmconfig = TMConfig()

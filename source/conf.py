@@ -109,11 +109,14 @@ latex_elements = {
 %\setlength{\cftsecnumwidth}{1.25cm}
 \newcommand{\seminarytitle}{<<seminary_title>>}
 \newcommand{\customizeinfos}{<<customize_infos>>}
+\newcommand{\thedate}{<<date>>}
 '''.replace(
   '<<seminary_title>>', tmconfig.seminary_title
 )
 .replace(
   '<<customize_infos>>', r'Modifiez les informations de cette page dans le fichier {\verb tsource/tmconfig.py}' if tmconfig.first_name == 'Prénom' else ''
+).replace(
+  '<<date>>', tmconfig.date()
 )
 }
 
