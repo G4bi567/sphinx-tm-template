@@ -139,24 +139,24 @@ Dans ce sous-chapitre, il y a une analyse approfondie sur tous les fichiers du p
     ```
     * Les routes individuelles qui sont montrées ci-dessus en tant que « path » permettent de faire fonctionner tout le site et de charger les pages définies. Il y a la route principale qui est le chemin « / ». Ensuite, il y a les routes « enfant », comme "IndexPage" et "settingsPage", qui sont chargées à l’intérieur du composant MainLayout. La dernière route est un « attrape tout », ce que signifie qu’elle est utilisée pour toutes les routes non définies.
 - src/stores/comments.js
-    * Ce store est une bibliothèque de gestion état qui est dédiée aux publications. Il permet un stockage de données, et aussi la création de fonctions globale. Ce store commence par les variables globales, elles peuvent être appelées dans tout le projet.  
-    * Le store contient ensuite la fonction « loadComment ». Si cette fonction est définie avec le paramètre « localStorage », elle permet lors de l’ouverture de la page « IndexPage » de charger les publications dans la variable « commentsList » qui sont stockées dans le local Storage. S’il n’y a aucune publication dans le local Storage, des publications ,qui sont déjà faites, sont enregistrées dans la variable ci-dessus et dans le local Storage.  Le paramètre «localStorage » permet lors de la création d’un backend de faciliter le codage, car il faudrait juste changer le paramètre « location » par « backend ».
-    * La fonction suivante « addComment » prend plusieurs paramètres en compte. Voici un bout de la fonction :
+    * Ce store est une bibliothèque de gestion d'état qui est dédiée aux publications. Il permet le stockage de données, ainsi que la création de fonctions globales. Ce store commence par les variables globales, elles peuvent être appelées dans tout le projet.  
+    * Le store contient ensuite la fonction « loadComment ». Si cette fonction est définie avec le paramètre « localStorage », les publications sont chargées dans la variable « commentsList » depuis le "local Storage" lors de l’ouverture de la page « IndexPage ». S’il n’y a aucune publication dans le "localStorage", des publications déjà préparées, sont enregistrées dans la variable ci-dessus et dans le "localStorage".  Le paramètre «localStorage » permet de faciliter le codage lors de la création d’un backend, car il suffit de changer le paramètre « location » par « backend ».
+    * La fonction « addComment » prend plusieurs paramètres en compte. Voici un bout de la fonction :
     ```{figure} figures/partie_1_addComment.png
     ---
     width: 40%
     ---
     Voici la première partie du code dans la fonction «addComment»
     ```
-    * Cette fonction prend pour commencer la variable « type ». Cette variable permet de définir si la fonction ajoute un commentaire ou une publication. Ensuite, la variable « id » est utile pour l’ajout d’un commentaire, car elle permet de savoir dans quelle publication le commentaire doit être ajouté. Cependant, lors de l’ajout d’une publication, elle n’est d’aucune utilité. La variable « comment » est définie sur les pages de l’appel de la fonction. Elle contient les informations, comme la description écrite si c’est une création de commentaire. Si c’est une création de publication, elle contiendra en plus le titre et la branche. Les variables « nameprofil » et « pp_profil » sont définies lors de l’appel de la fonction avec l’utilisation du store utilisateur. Puis toutes les informations sont ajoutées dans l’objet "comment". Finalement, les conditions « if » suivantes permettent de définir la liste sur laquelle on veut travailler. Lorsque l’utilisateur veut ajouter un commentaire, la fonction définit « this.commentstomodify » en tant que les commentaires de la publication choisie , dans le but de de trouver l’id du nouveau commentaire à ajouter. Si cette fois l’utilisateur veut ajouter une publication, « this.commentstomodify » est défini comme la liste de toutes les publications, car cette fois il faut trouver quelle id il faut donner à la nouvelle publication. 
-    * La partie suivante permet de trouver le id du commentaire ou de la publication.
+    * Cette fonction prend la variable « type » comme premier paramètre. Cette variable permet de définir si la fonction ajoute un commentaire ou une publication. Ensuite, la variable « id » permet de savoir dans quelle publication le commentaire doit être ajouté. Cependant, lors de l’ajout d’une publication, elle n’est d’aucune utilité. La variable « comment » est définie sur les pages de l’appel de la fonction. Elle contient les informations, comme la description écrite si c’est une création de commentaire. Si c’est une création de publication, elle contiendra en plus le titre et la branche. Les variables « nameprofil » et « pp_profil » sont définies lors de l’appel de la fonction avec l’utilisation du store utilisateur. Puis toutes les informations sont ajoutées dans l’objet "comment". Finalement, les conditions « if » suivantes permettent de définir la liste sur laquelle on veut travailler. Lorsque l’utilisateur veut ajouter un commentaire, la fonction définit « this.commentstomodify », qui contient les commentaires de la publication choisie et qui permet de trouver l’id du nouveau commentaire à ajouter. Si l’utilisateur veut ajouter une publication, « this.commentstomodify » est défini comme la liste de toutes les publications, car cette fois il faut trouver l'id de la nouvelle publication. 
+    * La partie suivante permet de trouver l'id du commentaire ou de la publication.
     ```{figure} figures/partie_2_addComment.png
     ---
     width: 40%
     ---
     Voici la deuxième partie du code dans la fonction «addComment»
     ```
-    * Tout d’abord, la clé « id » dans l’objet « comment » reçoit comme valeur 0. Puis, la première condition contrôle la taille de la liste. Si la liste est vide, le id sera d’office 0. Sinon, lorsque la liste n’est pas vide, une boucle compare le id des publications ou des commentaires présents.  Lorsque l’id de l'objet est plus grand que l’id du nouveau commentaire ou de la nouvelle publication, l’id de la nouvelle publication ou du nouveau commentaire est défini par l’id trouvé + 1. Après avoir traversé toute la liste, l’id recherché est défini. 
+    * Tout d’abord, la clé « id » dans l’objet « comment » reçoit comme valeur 0. Puis, la première condition contrôle la taille de la liste. Si la liste est vide, l'id sera d’office 0. Si la liste n’est pas vide, une boucle compare l'id des publications ou des commentaires présents.  Lorsque l’id de l'objet est plus grand que l’id du nouveau commentaire ou de la nouvelle publication, l’id de l'objet est défini par l’id trouvé + 1. Après avoir traversé toute la liste, l’id recherché est défini. 
     * La dernière partie permet d’enregistrer la nouvelle publication ou le nouveau commentaire.
     ```{figure} figures/partie_3_addComment.png
     ---
@@ -164,16 +164,16 @@ Dans ce sous-chapitre, il y a une analyse approfondie sur tous les fichiers du p
     ---
     Voici la troisième partie du code dans la fonction «addComment»
     ```
-    * Comme montré ci-dessus, le code a deux manières de définir la variable « commentsList ». Si c’est un commentaire, le nouveau commentaire est ajouté dans la bonne publication, et si c’est une publication , celle-ci est ajoutée dans la liste des publications. Pour finir, la nouvelle liste est ajoutée dans le local Storage, car la variable location est « localStorage ».
-    * La fonction suivante s’appelle « deleteComment ».  Celle-ci prend en paramètre le id de la publication que l’utilisateur veut supprimer et elle prend aussi la destination, c’est-à-dire le local Storage. Elle donne la possibilité de supprimer la publication choisie.
+    * Comme montré ci-dessus, le code a deux manières de définir la variable « commentsList ». Si c’est un commentaire, le nouveau commentaire est ajouté dans la bonne publication, et si c’est une publication, celle-ci est ajoutée dans la liste des publications. Pour finir, la nouvelle liste est ajoutée dans le localStorage, car la variable location est « localStorage ».
+    * La fonction suivante s’appelle « deleteComment ».  Celle-ci prend en paramètre l'id de la publication que l’utilisateur veut supprimer et elle prend aussi la destination, c’est-à-dire le local Storage. Elle donne la possibilité de supprimer la publication choisie.
     * La dernière fonction « resetComment » prend en paramètre la destination, qui est définie comme « localStorage ». Elle efface la variable contenant les listes des publications dans le localStorage.
 
 - src/stores/index.js
     * Ce fichier permet d'intégrer le magasin de Pinia. 
 - src/stores/utilisateur.js
-    * Ce store est utilisé afin de gérer les données en rapport avec l’utilisateur. Il contient par exemple la liste « followed » qui garde l’id des publications suivies.
-    * Pour les fonctions, ce store possède pour commencer deux fonctions opposées. La fonction « loginVariable » prend en paramètre « location » l’endroit où les données sont recherchées, ici le local Storage. Cette fonctionne permet premièrement de fermer la page « LogInPage », puis enregistre les données de l’utilisateur dans le local Storage. Finalement, elle enregistre la photo de profil de base dans le localStorage. Ensuite, la fonction opposée « logOut » qui donne la possibilité, cette fois-ci, d’effacer les données sur l’utilisateur et d’ouvrir la page « LogInPage ». Elle utilise le même paramètre « location ».
-    * Ensuite, il y a une fonction « changePpProfil». Cette fonction change la photo de profil de l’utilisateur par l’URL fournie dans le paramètre « NewLink », cette URL s’enregistre ainsi dans le local Storage.
+    * Ce store est utilisé afin de gérer les données relatives à l’utilisateur. Il contient par exemple la liste « followed » qui garde l’id des publications suivies.
+    * Ce store possède tout d'abord deux fonctions opposées. La fonction « loginVariable » prend en paramètre « location ». C'est l’endroit où les données sont recherchées, ici le local Storage. Cette fonction permet premièrement de fermer la page « LogInPage », puis enregistre les données de l’utilisateur dans le localStorage. Finalement, elle enregistre la photo de profil de base dans le localStorage. Ensuite, la fonction opposée « logOut » qui donne la possibilité d’effacer les données de l’utilisateur et d’ouvrir la page « LogInPage ». Elle utilise le même paramètre « location ».
+    * Ensuite, il y a une fonction « changePpProfil». Cette fonction change la photo de profil de l’utilisateur par l’URL fournie dans le paramètre « NewLink », cette URL s’enregistre ainsi dans le localStorage.
     * La fonction la plus importante dans ce store est la fonction «profilload ». Cette fonction charge les données de l’utilisateur dans toutes les pages. Voici la fonction :
     ```{figure} figures/code_profilLoad.png
     ---
@@ -181,26 +181,26 @@ Dans ce sous-chapitre, il y a une analyse approfondie sur tous les fichiers du p
     ---
     Code de la fonction «profilload»
     ```
-    * Lorsque l’utilisateur charge une page, cette fonction se lance. Elle prend les données sur le profil enregistrées dans le local Storage. Si cette variable est vide, la page « LogInPage » s’ouvre directement, ainsi l’utilisateur peut fournir les données. Sinon, les variables globales sont définies.
+    * Cette fonction se lance lorsque l’utilisateur charge une page. Elle prend les données depuis le profil enregistré dans le localStorage. Si cette variable du localStorage est vide, la page « LogInPage » s’ouvre directement, ainsi l’utilisateur peut fournir les données. Cependant, si la variable contient les informations sur l'utilisateur, les variables globales sont définies grâce au localStorage.
 
 - src/App.vue
-    * Ce fichier est la racine de toute l’application Quasar.
+    * Ce fichier est le point d'entrée de toute l’application Quasar.
 - .editorconfig
     * Ce fichier définit les styles de codage et les conventions à utiliser dans les éditeurs. Il maintient la cohérence du projet.
 - .eslintignore
     * Ce fichier est utilisé afin d’ignorer des fichiers spécifiques.
 - .eslintrc.js
-    * Ce fichier configure les règles ESLint, qui permettent aussi de garder une cohérence dans le projet.
+* Ce fichier configure les règles ESLint, qui permettent aussi de garder une cohérence dans le projet.
 - .gitignore
     * Ce fichier définit les fichiers qui ne doivent pas être suivis par Git. 
 - .prettierrc
     * Ce fichier permet de formater le code en utilisant Prettier. Il assure un formatage automatique en fonction d’un ensemble de règles.
 - .stackblitzrc
-    * Ce fichier permet de configurer Stackblitz. Il permet d’assurer des paramètres, des dépendances et de préférences si nécessaire. 
+    * Ce fichier de configuration Stackblitz permet de définir des paramètres, des dépendances et des préférences. 
 -index.html
     * Ceci est le fichier HTML principal. 
 - jsconfig.json
-    * Ce fichier est utilité pour configurer JavaScript dans Visual Studio Code.
+    * Ce fichier est utilisé pour configurer JavaScript dans Visual Studio Code.
 - package-lock.json
     * Ce fichier spécifie la version exacte à installer pour chaque dépendance.
 - package.json
@@ -208,9 +208,9 @@ Dans ce sous-chapitre, il y a une analyse approfondie sur tous les fichiers du p
 - postcss.config.js
     * Ce fichier configure PostCSS. 
 - quasar.config.js
-    * Ce fichier configure Quasar, comme les paramètres, les thèmes, les plugins, etc…
+    * Ce fichier configure Quasar, par exemple les paramètres, les thèmes, les plugins, etc…
 - Read.me
-    * Ce fichier contient des informations importantes sur le projet. Il est utile pour les utilisateurs et les développeurs, car il permet de comprendre rapidement le code. Il comporte un bref résumé du programme, les instructions pour l’installation et la mise en route du projet. Puis il possède aussi la manière de l’utiliser. 
+    * Ce fichier contient des informations importantes sur le projet. Il est utile pour les utilisateurs et les développeurs, car il permet de comprendre rapidement le code. Il comporte un bref résumé du programme, les instructions pour l’installation et la mise en route du projet. Puis il décrit aussi la manière d'utiliser le programme. 
 - Yarn.lock
     * Ce fichier est créé par Yarn. L’objectif de ce fichier est de permettre aux développeurs d’utiliser la même version de chaque dépendance, évitant les problèmes.
 
