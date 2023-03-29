@@ -26,7 +26,7 @@ Node.js est un environnement d’exécution JavaScript côté serveur. Grâce à
 	Ces deux commandes permettent de donner la version de Node.js et NPM.
 
 4.	Installer yarn avec le terminal en écrivant le code suivant et en appuyant sur enter:
-  ```bash
+	```bash
 
 	npm install --global yarn
 	```
@@ -42,14 +42,14 @@ Yarn est un gestionnaire de paquets pour JavaScript, créé par Facebook, et est
 	```
 
 6.	Installer les indépendances avec le terminal en écrivant:
-  ```bash
+	```bash
 
 	yarn install
 	```
 
 
 7.	Pour accéder au projet, il faut exécuter dans le terminal:
-  ```bash
+	```bash
 
 	quasar dev
 	```
