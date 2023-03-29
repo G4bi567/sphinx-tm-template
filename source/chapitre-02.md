@@ -29,6 +29,12 @@ Node.js est un environnement d’exécution JavaScript côté serveur. Grâce à
 
 Yarn est un gestionnaire de paquets pour JavaScript, créé par Facebook, et est compatible avec NPM et Node.js. Un des avantages par rapport à NPM est le fait qu’il arrive à installer les dépendances et les paquets plus rapidement. 
 
+1. Télécharger et extraire le code du projet sur https://github.com/G4bi567/quasar-projet-true-form. Ce projet est stocké sur GitHub, il est aussi possible d'utiliser Git en écrivant dans le terminal:
+```bash
+
+	git clone https://github.com/G4bi567/quasar-projet-true-form
+
+	```
 
 5.	Installer les indépendances avec le terminal en écrivant « yarn install ».
 

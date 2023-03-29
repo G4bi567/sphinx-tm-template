@@ -16,7 +16,9 @@ Création d’un forum d'entraide pour les étudiants du Collège du Sud
     chapitre-03.md
     conclusion.md
     references.rst
-    pdf_maquette.md
+    pdf_maquette_gino_rst.rst
+    pdf_maquette_gino.md
+    pdf_maquette_gino_latex.md
     declarationpersonnelle.md
     
 
