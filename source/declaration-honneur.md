@@ -50,6 +50,7 @@
 
     ```{raw} latex
     {
+
     \square \quad \text{oui} \\
     \square \quad \text{non (car il contient des données personnelles et sensibles).}
     }

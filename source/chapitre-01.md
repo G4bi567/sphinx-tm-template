@@ -4,7 +4,7 @@
 
 ## Modélisation du front-end
 
-Le premier outil utilisé afin de commencer le projet est Figma. Figma est un outil de conception qui permet d’élaborer des interfaces utilisateur pour les sites Web et les applications mobiles. Il vise à faciliter la création sur les interfaces pour les équipes de toutes tailles, réduisant ainsi le temps et les efforts nécessaires à la conception et au développement de produits numériques de haute qualité.
+Le premier outil utilisé afin de commencer le projet est Figma {cite:p}`FigmaIntro`. Figma est un outil de conception qui permet d’élaborer des interfaces utilisateur pour les sites Web et les applications mobiles. Il vise à faciliter la création sur les interfaces pour les équipes de toutes tailles, réduisant ainsi le temps et les efforts nécessaires à la conception et au développement de produits numériques de haute qualité.
 
 Dans le but de créer un site Web agréable et intéressant, le design UX, connu sous le nom de design utilisateur, est l’un des facteurs les plus importants à prendre en compte. Cela consiste en la conception de produits numériques en mettant l’accent sur l’expérience utilisateur. Il faut mettre à disposition des outils et une interface intuitive et facile à utiliser en vue de satisfaire les besoins des utilisateurs. Le prototypage du projet est alors primordial afin d’établir tous les points importants pour le projet. Ce projet étant réalisé dans l’intention d’être utilisé par les étudiants, il se doit d’avoir toutes les fonctionnalités potentiellement utiles.
    
