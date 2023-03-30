@@ -19,6 +19,7 @@ Création d’un forum d'entraide pour les étudiants du Collège du Sud
     pdf_maquette_gino_rst.rst
     pdf_maquette_gino.md
     pdf_maquette_gino_latex.md
+    code-source.md
     declaration-honneur.md
     
 
