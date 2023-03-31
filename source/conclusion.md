@@ -1,9 +1,7 @@
 
 # Conclusion 
 
-## Présentation des défauts du code  
 
---- parler de supprimer
 
 ## Bilan des objectifs
 
@@ -29,13 +27,16 @@ Les séminaires n’ont malheureusement pas donné la possibilité d’apprendre
 D'autres fonctionnalités plus basiques ont été volontairement mises de côté. 
 Par exemple, le changement de couleur du site qui a été considéré comme une fonctionnalité secondaire et n'a finalement pas été implémenté.
 
-
 ### Propositions de piste pour accomplir les objectifs  
 
 Avec plus de temps, il est tout à fait envisageable d'implémenter ces fonctionnalités. 
 Afin de créer un site avec la possibilité de changer de couleur, il est possible d'utiliser les variables SCSS, déjà fournies par l’application Quasar, et de les changer grâce à des palettes de couleur, placées dans les paramètres du site. 
 De plus, une nouvelle variable dans le store « comment.js » peut être créée, dans le but d’enregistrer les points forts de l’élève. 
 Ensuite, une nouvelle page ou un bouton qui sert de filtre peuvent être utilisés afin d’afficher les publications qui sont adaptées aux choix faits préalablement.
+
+## Présentation des défauts du code  
+
+Le projet contient quelques défauts. Pour commencer, n'importe quel utilisateur peut supprimer une publication qu'il n'a pas écrit. Ce type de fonctionnalité est souvent disponible pour les administrateurs d'un site. Dans le futur, le projet pourrait ,grâce à une vrai connexion, restreindre l'utilisateur de pouvoir supprimer uniquement ses propres publications. L'autre défaut est le manque de confirmatio
 
 ## Travaux futurs pour le site
 

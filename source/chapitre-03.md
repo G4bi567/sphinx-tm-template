@@ -1,6 +1,8 @@
 # Guide et documentation développeur 
+
 ## Structure du code et rôle des fichiers
-Dans ce sous-chapitre, il y a une analyse approfondie sur tous les fichiers du projet.
+
+Cette section présente une analyse approfondie de tous les fichiers du projet.
 
 - src/boot/.gitkeep
     * Ce fichier n’est pas un fichier spécifique à Quasar, mais un fichier ajouté par Git. Il permet d’inclure des répertoires vides dans le dépôt du projet.
@@ -12,7 +14,7 @@ Dans ce sous-chapitre, il y a une analyse approfondie sur tous les fichiers du p
     ---
     Exemple du composant « CreatePost ». 
     ```
-    * Tout d’abord, l’utilisateur doit fournir la branche sur laquelle il a un questionnement. Puis il doit écrire un titre pour sa publication. Finalement, il doit rédiger une description détaillée , en vue de faire comprendre le mieux possible le problème aux autres utilisateurs. La description peut être mise en forme grâce aux options de police et de format.  Le composant se termine par un bouton de soumission « Envoyer » qui permet d’activer la fonction qui enregistre la publication. Puis l’utilisateur est envoyé sur la page d’accueil avec la nouvelle publication présente. La fonction « addPost », qui permet d’enregistrer la nouvelle publication, sera expliquée plus en détail dans src/stores/comment.js.
+    * Tout d’abord, l’utilisateur doit fournir la branche sur laquelle il a un questionnement. Puis il doit écrire un titre pour sa publication. Finalement, il doit rédiger une description détaillée, en vue de faire comprendre le mieux possible le problème aux autres utilisateurs. La description peut être mise en forme grâce aux options de police et de format.  Le composant se termine par un bouton de soumission « Envoyer » qui permet d’activer la fonction qui enregistre la publication. Puis l’utilisateur est envoyé sur la page d’accueil avec la nouvelle publication présente. La fonction « addPost », qui permet d’enregistrer la nouvelle publication, sera expliquée plus en détail dans src/stores/comment.js.
     * Une fonctionnalité intéressante sur ce composant est la fonction « isAvailable ». 
     
      ```{figure} figures/Fonction_isAvailable.png
@@ -62,7 +64,7 @@ Dans ce sous-chapitre, il y a une analyse approfondie sur tous les fichiers du p
 
     
     * Cette barre permet d’accéder à plusieurs fonctionnalités du site. Tout d’abord, des boutons « Home page » et « Suivis » sont présents. Ils permettent d’accéder soit à la page principale des publications, soit à la page réservée aux publications suivies. Le bouton « Home Page » sert à remettre à zéro la page lorsqu’un filtre est utilisé. La page « Suivis » est utile à l’utilisateur, afin de voir l’évolution de la discussion pour résoudre un problème. Ensuite, une image du logo du Collège du Sud et « Forum CSUD » font office de titre pour le site Web. Puis, un bouton « une question » permet d’accéder au formulaire de création de publication, vu précédemment comme étant le composant « CreatePost ». Finalement, il y a un menu déroulant qui permet d’accéder à la page des paramètres du site.
-    * Les deux boutons aux extrémités  permettent d’ouvrir des « drawers », c’est-à-dire des tiroirs montrés ci-dessous.
+    * Les deux boutons aux extrémités permettent d’ouvrir des « drawers », c’est-à-dire des tiroirs montrés ci-dessous.
     ```{figure} figures/exemple_tiroir_branche.png
     ---
     width: 20%
@@ -77,7 +79,7 @@ Dans ce sous-chapitre, il y a une analyse approfondie sur tous les fichiers du p
     ---
     Code pour faire apparaître les pages
     ```
-    * L’affichage de la page varie principalement entre 3 pages.
+    * L’affichage de la page varie principalement entre trois pages.
     * Tout d’abord, la page de Login. Cette page est la première page à s’afficher pour un nouvel utilisateur. Le site n’ayant aucune information sur le profil à ce moment-là, la variable login a la valeur « false » et permet ainsi à la page « LogInPage » d’apparaître. Une fois le formulaire de connexion rempli, la variable est égale à « true ». Alors s’affiche la deuxième page, c’est-à-dire le fil des récentes publications dans l’ordre de publication.  Cette page est faite grâce à « IndexPage.vue ».  Puis, si l’utilisateur décide d’écrire une question, en appuyant sur le bouton «une question», la variable « writeComment » est égale à « true ». Ainsi le composant « CreatePost » apparaît. Une fois le formulaire rempli, la valeur « false » est affectée à la variable et la page de fil des publications s’affiche en conséquence.
 
 - src/pages/ErrorNotFound.vue
@@ -105,8 +107,7 @@ Dans ce sous-chapitre, il y a une analyse approfondie sur tous les fichiers du p
     ---
     Exemple de la page "IndexPage"
     ``` 
-    * Au moment où l’utilisateur appuie sur un profil dans une publication, la variable « filteroptiontype » est alors assignée la valeur « name ». La fonction assignera à la variable « UpdatedList » la liste des publications qui ont été écrites par la personne choisie.  C’est la même logique quand l’utilisateur appuie sur une branche, la fonction fait le filtrage par rapport aux publications qui ont cette même branche en commun. En plus, la fonction permet aussi d’afficher les publications qu’on a voulu suivre lorsque l’utilisateur appuie sur le bouton « Suivis ».
-
+    * Au moment où l’utilisateur appuie sur un profil dans une publication, la variable « filteroptiontype » est alors assignée la valeur « name ». La fonction assignera à la variable « UpdatedList » la liste des publications qui ont été écrites par la personne choisie. C’est la même logique quand l’utilisateur appuie sur une branche, la fonction fait le filtrage par rapport aux publications qui ont cette même branche en commun. En plus, la fonction permet aussi d’afficher les publications qu’on a voulu suivre lorsque l’utilisateur appuie sur le bouton « Suivis ».
     * Finalement, la dernière partie importante de cette page est sa pagination. Elle possède une pagination réactive, qui augmente lorsque des publications sont ajoutées. Un nombre de 5 publications est affiché au maximum par page. Au bas du site se trouve une pagination qui permet de voir toutes les publications publiées.
 
 - src/pages/LogInPage.vue
@@ -117,7 +118,7 @@ Dans ce sous-chapitre, il y a une analyse approfondie sur tous les fichiers du p
     ---
     Exemple de la page "LogInPage"
     ```
-    * La fonction principale est la « controlTheValues() » qui empêche l’utilisateur de finir la connexion avec des champs d’entrée vides. Cette fonction vérifie si chaque champ est rempli.  Si ce n’est pas le cas, un message apparaît expliquant qu’il manque une entrée. Lorsqu’il n’y a aucun problème, la page IndexPage s’ouvre.
+    * La fonction principale est la « controlTheValues() » qui empêche l’utilisateur de finir la connexion avec des champs d’entrée vides. Cette fonction vérifie si chaque champ est rempli. Si ce n’est pas le cas, un message apparaît expliquant qu’il manque une entrée. Lorsqu’il n’y a aucun problème, la page IndexPage s’ouvre.
 - src/pages/settingsPage.vue
     * La page « Paramètres » est une page très utile pour l’utilisateur. Voici à quoi elle ressemble.
     ```{figure} figures/exemple_parametre.png
@@ -126,7 +127,7 @@ Dans ce sous-chapitre, il y a une analyse approfondie sur tous les fichiers du p
     ---
     Exemple d'un page "settingsPage"
     ```
-    * La première fonctionnalité est la possibilité de changer la photo de profil. Elle apparaît quand une publication est faite par l’utilisateur. Ensuite, un bouton « Supprimer les publications » permet de remettre les publications à zéro et d’afficher seulement les deux publications qui servent d’exemple.  Finalement, le bouton « Se déconnecter » donne la possibilité à l’utilisateur de se déconnecter.
+    * La première fonctionnalité est la possibilité de changer la photo de profil. Elle apparaît quand une publication est faite par l’utilisateur. Ensuite, un bouton « Supprimer les publications » permet de remettre les publications à zéro et d’afficher seulement les deux publications qui servent d’exemple. Finalement, le bouton « Se déconnecter » donne la possibilité à l’utilisateur de se déconnecter.
 - src/router/index.js
     * Ce fichier est utilisé par les applications Vue.js dans le but de définir et de mettre en place le système de routage de l’application. 
 -src/router/routes.js
@@ -190,7 +191,7 @@ Dans ce sous-chapitre, il y a une analyse approfondie sur tous les fichiers du p
 - .eslintignore
     * Ce fichier est utilisé afin d’ignorer des fichiers spécifiques.
 - .eslintrc.js
-* Ce fichier configure les règles ESLint, qui permettent aussi de garder une cohérence dans le projet.
+    * Ce fichier configure les règles ESLint, qui permettent aussi de garder une cohérence dans le projet.
 - .gitignore
     * Ce fichier définit les fichiers qui ne doivent pas être suivis par Git. 
 - .prettierrc
