@@ -3,9 +3,9 @@
 
 ## Modélisation du front-end
 
-Le premier outil utilisé afin de commencer le projet est Figma {cite:p}`FigmaIntro`. Figma est un outil de conception qui permet d’élaborer des interfaces utilisateur pour les sites Web et les applications mobiles. Il vise à faciliter la création sur les interfaces pour les équipes de toutes tailles, réduisant ainsi le temps et les efforts nécessaires à la conception et au développement de produits numériques de haute qualité.
+Le premier outil utilisé afin de commencer le projet est Figma. Figma {cite:p}`Figma` est un outil de conception qui permet d’élaborer des interfaces utilisateur pour les sites Web et les applications mobiles. Il vise à faciliter la création sur les interfaces pour les équipes de toutes tailles, réduisant ainsi le temps et les efforts nécessaires à la conception et au développement de produits numériques de haute qualité.
 
-Dans le but de créer un site Web agréable et intéressant, le design UX, connu sous le nom de design utilisateur, est l’un des facteurs les plus importants à prendre en compte. Cela consiste en la conception de produits numériques en mettant l’accent sur l’expérience utilisateur. Il faut mettre à disposition des outils et une interface intuitive et facile à utiliser en vue de satisfaire les besoins des utilisateurs. Le prototypage du projet est alors primordial afin d’établir tous les points importants pour le projet. Ce projet étant réalisé dans l’intention d’être utilisé par les étudiants, il se doit d’avoir toutes les fonctionnalités potentiellement utiles.
+Dans le but de créer un site Web agréable et intéressant, le design UX {cite:p}`ux_design`, connu sous le nom de design utilisateur, est l’un des facteurs les plus importants à prendre en compte. Cela consiste en la conception de produits numériques en mettant l’accent sur l’expérience utilisateur. Il faut mettre à disposition des outils et une interface intuitive et facile à utiliser en vue de satisfaire les besoins des utilisateurs. Le prototypage du projet est alors primordial afin d’établir tous les points importants pour le projet. Ce projet étant réalisé dans l’intention d’être utilisé par les étudiants, il se doit d’avoir toutes les fonctionnalités potentiellement utiles.
    
 ```{figure} figures/comparaison.png
 ---
@@ -14,9 +14,9 @@ width: 30%
 Comparaison 
 ```
 
-Pour la création du modèle, le site Quora a été utilisé comme inspiration. Quora étant une plateforme de questions-réponses, elle s’adapte exactement au but du projet. Les points importants ont vite été repérés. Par exemple, il s’agissait de faire un site sombre qui s’adapte plus à l’usage quotidien ou encore un onglet accessible de façon à accéder facilement au groupe de branche. Un travail minutieux et complet a été effectué sur la modélisation afin d’avoir une base solide qui pourra être utilisée pendant toute la partie de programmation.
+Pour la création du modèle, le site Quora a été utilisé comme inspiration. Quora {cite:p}`Quora1,Quora2` étant une plateforme de questions-réponses, elle s’adapte exactement au but du projet. Les points importants ont vite été repérés. Par exemple, il s’agissait de faire un site sombre qui s’adapte plus à l’usage quotidien ou encore un onglet accessible de façon à accéder facilement au groupe de branche. Un travail minutieux et complet a été effectué sur la modélisation afin d’avoir une base solide qui pourra être utilisée pendant toute la partie de programmation.
 
-```{admonition} Vous pouvez accéder à la maquette en annexe à ce rapport.
+```{admonition} Vous pouvez accéder à la maquette en annexe à ce rapport. En vue de voir la maquette complète, elle est présente sur la version HTML du rapport écrit.
 ```
 
 

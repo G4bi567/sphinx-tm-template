@@ -1,6 +1,6 @@
-# Guide et documentation développeur 
+# Guide développeur
 
-## Structure du code et rôle des fichiers
+## Structure du code et rôles des fichiers
 
 Cette section présente une analyse approfondie de tous les fichiers du projet.
 
