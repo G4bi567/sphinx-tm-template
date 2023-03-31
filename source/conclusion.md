@@ -45,7 +45,7 @@ L'un des problèmes lors de la finalisation d'un travail créatif est le fait qu
 Pendant la présentation du projet, le composant récursif « LayerPostComment » a été présenté. 
 Cependant, pour la création de publications et de commentaires, ce schéma devient plus compliqué à mettre en place. 
 Il faut avoir un gestionnaire de données capable de trouver l’emplacement où il faudrait ajouter le commentaire, car, avec la méthode actuelle, il est difficile d’ajouter un commentaire à un commentaire précédent d’une manière effective. 
-La même logique s’applique lorsque l’utilisateur veut supprimer un commentaire, il est impossible de retrouver l’index d’un commentaire facilement. 
+La même logique s’applique lorsque l’utilisateur veut supprimer un commentaire, il est difficle de retrouver l’index d’un commentaire facilement. 
 Ce problème peut être résolu grâce à l'implémentation d'un backend, qui permet de gérer les données avec plus d'aisance.
 
 Pendant la présentation du projet, le composant récursif « PostLayer » a été présenté. 
