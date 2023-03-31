@@ -6,17 +6,19 @@ export const useCommentStore = defineStore('commentStore', {
     commentsList: [],
     commentstomodify: [],
     filteroption: null,
+    filteroptiontitle: null,
     filteroptiontype: null,
     isAvailableVar: true,
+    tab: 'Home Page',
   }),
 
   actions: {
     async loadComments(location) {
       if (location === 'localStorage') {
-        // On récupère les données du localStorage
+        // We get the data from the localStorage
         this.commentsList = JSON.parse(localStorage.getItem('data'));
 
-        // Si le localStorage ne contient pas de commentaire, on charge des commentaires fictifs
+        // If the localStorage does not contain any comments, we load fictitious comments
         if (JSON.parse(localStorage.getItem('data')) === null) {
           this.commentsList = [
             {
@@ -26,7 +28,7 @@ export const useCommentStore = defineStore('commentStore', {
               description:
                 'Bonjour à tous, je voudrais savoir comment je pourrais améliorer ma grammaire et les formulation de mes pharses. Car je perds très souvent des points à causes de ça, mais je ne sais pas comment y remédier. Merci pour vos futurs réponses. ',
               branche: 'Français',
-              pp_profil:
+              pp_profile:
                 'https://th.bing.com/th/id/R.5a537e0b861eb2177ae056f26c87c097?rik=OaqK6FPDWti%2f4g&riu=http%3a%2f%2fwww.magicalmaths.org%2fwp-content%2fuploads%2f2012%2f11%2fmaths_image.jpg&ehk=Ef%2fTZg08YV4z5c1PxaQy1rYcsmjGbiEAxH3L6ifAk3o%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1',
               id: 1,
               comment: [
@@ -35,7 +37,7 @@ export const useCommentStore = defineStore('commentStore', {
                   name: 'François',
                   description:
                     "Salut, je comprends ce que tu dis, ce que j'ai fait c'est d'écrire très souvent et de donner les feuilles à ton professeur de langue afin qu'il corrige(je suis sûr il le fera)",
-                  pp_profil:
+                  pp_profile:
                     'https://th.bing.com/th/id/OIP.yxV37VJ70Fy4_GyhctJprwHaJX?pid=ImgDet&rs=1',
                   id: 1,
                   comment: [
@@ -45,7 +47,7 @@ export const useCommentStore = defineStore('commentStore', {
                       description:
                         'Je voudrais juste rajouter que tu peux demander aussi des cours supplémentaires pour revoir les erreurs que tu comprends pas dans tes rédactions.',
                       branche: 'fr',
-                      pp_profil:
+                      pp_profile:
                         'https://www.floridaorthosurgeons.com/wp-content/uploads/2016/09/no-image.jpg',
                       id: 1,
                       comment: [],
@@ -56,7 +58,7 @@ export const useCommentStore = defineStore('commentStore', {
                   date: '29-11-22',
                   description:
                     'Salut, je te dirais de repérer les erreurs que tu fais dans tes évaluations, et après tu vas lire les règles de celle-ci.',
-                  pp_profil:
+                  pp_profile:
                     'https://www.floridaorthosurgeons.com/wp-content/uploads/2016/09/no-image.jpg',
                   id: 2,
                   name: 'jonathan',
@@ -70,7 +72,7 @@ export const useCommentStore = defineStore('commentStore', {
               description:
                 "Bonjour, ça fait longtemps j'ai un problème avec les résolutions de problèmes en Maths, car je ne vois pas où commencer, quoi utiliser... etc. Merci de votre aide",
               branche: 'Mathématiques',
-              pp_profil:
+              pp_profile:
                 'https://th.bing.com/th/id/R.5a537e0b861eb2177ae056f26c87c097?rik=OaqK6FPDWti%2f4g&riu=http%3a%2f%2fwww.magicalmaths.org%2fwp-content%2fuploads%2f2012%2f11%2fmaths_image.jpg&ehk=Ef%2fTZg08YV4z5c1PxaQy1rYcsmjGbiEAxH3L6ifAk3o%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1',
               id: 2,
               name: 'Joel',
@@ -80,7 +82,7 @@ export const useCommentStore = defineStore('commentStore', {
           localStorage.setItem('data', JSON.stringify(this.commentsList));
         }
       } else {
-        // Utilisation de fetch pour aller récupérer les données du backend à l'aide d'une API
+        // Use of fetch to retrieve data from the backend using an API
         // try {
         //     await fetch('https://your-backend-url.com/comments', {
         //         method: 'GET',
@@ -94,14 +96,14 @@ export const useCommentStore = defineStore('commentStore', {
       }
     },
 
-    async addComment(type, id, comment, nameprofil, pp_profil, location) {
-      // enregistrer les informations personnelles et ajouter des nouvelles informations
-      comment.name = nameprofil;
+    async addComment(type, id, comment, nameprofile, pp_profile, location) {
+      // save personal information and add new information
+      comment.name = nameprofile;
       comment.date = date.formatDate(Date.now(), 'DD-MM-YYYY');
-      comment.pp_profil = pp_profil;
+      comment.pp_profile = pp_profile;
       comment.comment = [];
 
-      //définir la liste sur laquelle on veut ajouter quelquechose
+      //define the list on which you want to add something
       if (type == 'comment') {
         this.commentstomodify = this.commentsList.filter(
           (post) => post.id == id
@@ -109,7 +111,7 @@ export const useCommentStore = defineStore('commentStore', {
       } else {
         this.commentstomodify = this.commentsList;
       }
-      // trouver l'index max du commentaire/publication dans la liste des publications
+      // find the max index of the comment/publication in the list of publications
       var maxId = 0;
       comment.id = maxId;
       if (this.commentstomodify.length !== 0) {
@@ -122,7 +124,7 @@ export const useCommentStore = defineStore('commentStore', {
         }
       }
 
-      //enregistrer la liste dans la variable commentsList
+      //save the list in the variable commentsList
       if (type == 'comment') {
         this.commentsList
           .filter((post) => post.id == id)[0]
@@ -132,10 +134,10 @@ export const useCommentStore = defineStore('commentStore', {
       }
 
       if (location === 'localStorage') {
-        //enregistrer la liste dans le local Storage
+        //save the list in the localStorage
         localStorage.setItem('data', JSON.stringify(this.commentsList));
       } else {
-        // Sauvegarder dans le backend
+        // Save in the backend
         // Utilisation de fetch pour aller récupérer les données du backend à l'aide d'une API
         // try {
         //     await fetch('https://your-backend-url.com/comments', {
@@ -149,22 +151,25 @@ export const useCommentStore = defineStore('commentStore', {
       }
     },
     deleteComment(id, location) {
-      // Suppression locale
-      let index = this.commentsList
-        .map((x) => {
-          return x.id;
-        })
-        .indexOf(id);
-      this.commentsList.splice(index, 1);
+      // Local deletion
+      if (confirm('Êtes-vous sûr de voulour supprimer ? ')) {
+        let index = this.commentsList
+          .map((x) => {
+            return x.id;
+          })
+          .indexOf(id);
+        this.commentsList.splice(index, 1);
 
-      // Suppression db/localStorage
-      if (location === 'localStorage') {
-      } else {
-        //Suppression dans le backend en utilisant une API
+        // Delete db/localStorage
+        if (location === 'localStorage') {
+          localStorage.setItem('data', JSON.stringify(this.commentsList));
+        } else {
+          //Deletion in the backend using an API
+        }
       }
     },
     resetComment(location) {
-      // Suppression db/localStorage
+      // Delete db/localStorage
       if (location === 'localStorage') {
         localStorage.removeItem('data');
       }

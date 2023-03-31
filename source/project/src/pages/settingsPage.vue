@@ -1,28 +1,28 @@
 <template>
   <div class="q-pa-md">
-    <div class="flew row" style="color: white">
-      <div class="column items-start" style="height: 150px">
-        <div class="col, margin-top: 30">
-          <q-btn style="width: 150px; background: secondary" label="Profil" />
+    <div class="flew row">
+      <div class="column items-start textwhite">
+        <div class="col">
+          <q-btn class="bg-secondary width-section" label="Profil" />
         </div>
-        <div class="col,margin-top: 30">
+        <div class="col">
           <q-btn
             @click="CommentStore.resetComment('localStorage')"
-            style="width: 150px; background: secondary"
+            class="bg-secondary width-section"
             label="Supprimer les publications"
             to="/"
           />
         </div>
-        <div class="col,margin-top: 30">
+        <div class="col topmargin">
           <q-btn
-            @click="UserStore.logOut('localStorage'), $emit(`logout`)"
-            style="width: 150px; background: secondary"
+            @click="UserStore.logOut('localStorage')"
+            class="bg-secondary width-section"
             label="Se déconnecter"
             to="/"
           />
         </div>
       </div>
-      <div style="margin: 10px; max-width: 50%">
+      <div class="inputLink">
         <q-input
           class="divInput"
           outlined
@@ -41,8 +41,11 @@
           label="Envoyer"
           @click="isAvailable(newLink)"
         />
-        <div v-if="ismodified == false">
+        <div class="textwhite" v-if="ismodified == true">
           Vous avez changé votre photo d'écran
+        </div>
+        <div class="textwhite" v-if="ismodified == false">
+          Votre URL n'est pas valide
         </div>
       </div>
     </div>
@@ -51,24 +54,32 @@
 
 <script setup>
 import { ref } from 'vue';
-import { useUserStore } from 'stores/utilisateur.js';
+import { useUserStore } from 'stores/user.js';
 import { useCommentStore } from 'stores/comment.js';
 
-//permet d'accéder au store
+//allows access to the store
 const CommentStore = useCommentStore();
-//permet d'accéder au store
 
+//allows access to the store
 const UserStore = useUserStore();
-UserStore.profilload();
-const ismodified = ref(true);
+
+//loads the profile variables
+UserStore.profileload();
+
+//variable that displays a message when changing the profile picture
+const ismodified = ref(null);
+
+//variable that stores the new url
 const newLink = ref('');
+
+//function to check if the url is an image
 function isAvailable(newLink) {
   if (newLink) {
     const img = new Image();
     img.src = newLink;
 
     img.onload = function () {
-      UserStore.changePpProfil(newLink);
+      UserStore.changePpProfile(newLink);
       ismodified.value = true;
     };
 
@@ -76,6 +87,7 @@ function isAvailable(newLink) {
       ismodified.value = false;
     };
   }
+  ismodified.value = false;
 }
 </script>
 <style>
@@ -85,5 +97,18 @@ function isAvailable(newLink) {
 }
 .btnEnvoyez {
   margin-top: 10px;
+}
+.textwhite {
+  color: white;
+}
+.topmargin {
+  margin-top: 20px;
+}
+.width-section {
+  width: 150px;
+}
+.inputLink {
+  margin: 10px;
+  max-width: 50%;
 }
 </style>
