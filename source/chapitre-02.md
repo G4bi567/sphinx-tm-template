@@ -7,12 +7,12 @@ Afin de pouvoir lancer le projet sur un ordinateur, il faut respecter une série
 
 1.	Télécharger et installer {index}`Visual Studio Code`. Le fichier .exe peut être retrouvé sur le site officiel : https://code.visualstudio.com/ ; il faut choisir la version adaptée au système d’exploitation de l'ordinateur, comme Windows, MacOs, Linux.
 
-Visual Studio Code, souvent abrégé en VSCode, est un logiciel libre de Microsoft pour Windows, Linux et MacOS. Il est conçu pour aider les développeurs à créer, déboguer et déployer des applications logicielles. VSCode offre des fonctionnalités telles que la complétion de code, la prise en charge du débogage, la refactorisation du code, l’intégration de systèmes de contrôle tel que Git, la prise en charge des extensions, etc. Il prend également en charge de nombreux langages de programmation, notamment C++, Python, HTML, CSS, JavaScript, TypeScript, etc. Un des points les plus avantageux est le grand nombre d’extensions, qui permet aux développeurs de personnaliser leur environnement de travail et d’améliorer leurs productivité.
+Visual Studio {cite:p}`VSC` Code, souvent abrégé en VSCode, est un logiciel libre de Microsoft pour Windows, Linux et MacOS. Il est conçu pour aider les développeurs à créer, déboguer et déployer des applications logicielles. VSCode offre des fonctionnalités telles que la complétion de code, la prise en charge du débogage, la prise en charge des extensions, etc. Il prend également en charge de nombreux langages de programmation, notamment C++, Python, HTML, CSS, JavaScript, TypeScript, etc. Un des points les plus avantageux est le grand nombre d’extensions, qui permet aux développeurs de personnaliser leur environnement de travail et d’améliorer leurs productivité.
 
 2.	Télécharger et installer Node.js, grâce au lien suivant : https://nodejs.org/en/download.
 Pour l’installation, il faut accepter des modifications en tant qu’administrateur.
 
-Node.js est un environnement d’exécution JavaScript côté serveur. Grâce à ce framework, les développeurs disposent d’un interpréter du code JavaScript en dehors du navigateur. La distribution de Node.js intègre NPM, ou Node Package Manager. NPM est un gestionnaire de paquets pour Node.js qui permet aux développeurs de gérer facilement les dépendances de leur projet. NPM facilite l’installation, la mise à jour et la suppression des paquets et des modules nécessaires à un projet. Cela permet aux développeurs de créer des applications de bureau multiplateformes à l’aide de technologies Web telles que HTML, CSS et JavaScript.
+Node.js {cite:p}`Node,Node2` est un environnement d’exécution JavaScript côté serveur. Grâce à ce framework, les développeurs disposent d’un interpréter du code JavaScript en dehors du navigateur. La distribution de Node.js intègre NPM, ou Node Package Manager. NPM {cite:p}`NPM.js {cite:p}`Node,Node2` est un environnement d’exécution JavaScript côté serveur. Grâce à ce framework, les développeurs disposent d’un interpréter du code JavaScript. La distribution de Node.js intègre NPM, ou Node Package Manager. NPM est un gestionnaire de paquets pour Node.js qui permet aux développeurs de gérer facilement les dépendances de leur projet. NPM facilite l’installation, la mise à jour et la suppression des paquets et des modules nécessaires à un projet. Cela permet aux développeurs de créer des applications de bureau multiplateformes à l’aide de technologies Web telles que HTML, CSS et JavaScript.
 
 3.	Faire une vérification pour savoir si Node.js et NPM sont correctement installés. Il faut ouvrir le terminal sur Visual Studio Code en allant sur Affichage > Terminal ou Terminal > Nouveau Terminal. Puis il faut écrire les deux commandes suivantes séparément et ensuite, il faut appuyer sur enter. 
 
@@ -34,7 +34,7 @@ Node.js est un environnement d’exécution JavaScript côté serveur. Grâce à
 	npm install --global yarn
 	```
 
-Yarn est un gestionnaire de paquets pour JavaScript, créé par Facebook, et est compatible avec NPM et Node.js. Un des avantages par rapport à NPM est le fait qu’il arrive à installer les dépendances et les paquets plus rapidement. 
+Yarn NPM {cite:p}`NPM.js {cite:p}` est un gestionnaire de paquets pour JavaScript, créé par Facebook, et est compatible avec NPM et Node.js. Un des avantages par rapport à NPM est le fait qu’il arrive à installer les dépendances et les paquets plus rapidement. 
 
 5. Télécharger et extraire le code du projet sur https://github.com/G4bi567/quasar-projet-true-form. Il faut ensuite ouvrir le dossier en le glissant dans Visual Studio Code ou en allant dans Fichier > Ouvrir le dossier > ... et en choisissant le dossier du travail. Ce projet est stocké sur GitHub, si Git est installé sur la machine utilisée, il est aussi possible d'utiliser la commande suivante dans le terminal afin d'installer le projet :
 
@@ -77,11 +77,11 @@ La fonctionnalité la plus importante de ce site est la possibilité de créer o
 
 ### Suppression
 
-L’option « Supprimer » est très importante. Il est possible de supprimer toute publication, même si l'utilisateur n'en est pas l'auteur. Cette fonctionnalité supprime la publication complète ; il n'est pas possible de supprimer les commentaires des publications.
+L’option « Supprimer » est très importante. Il est possible de supprimer les publications écrites par l'utilisateur. Cette fonctionnalité supprime la publication complète ; il n'est pas possible de supprimer les commentaires des publications.
 
 ### Filtrage des publications.
 
-Afin d’améliorer l’usage du forum, des actions filtrent les publications. Par exemple, en appuyant sur le nom d’une personne dans une publication, il est possible de voir toutes les publications de cet utilisateur. La même fonctionnalité s’applique à la branche associée à la publication, dans le but de voir toutes les publications liées à cette branche précise. À gauche, une liste des branches déroulante est présente, et facilite l’accès rapide à toutes les branches. Une autre fonction de filtrage est présente pour le nombre de publications affichées sur une page. Le site affiche jusqu'à 5 publications par page. Lorsque le site contient plus de 5 publications, il est possible de changer de page avec le menu de navigation afin de voir les autres publications
+Afin d’améliorer l’usage du forum, des fonctions filtrent les publications. Par exemple, en appuyant sur le nom d’une personne dans une publication, il est possible de voir toutes les publications de cet utilisateur. La même fonctionnalité s’applique à la branche associée à la publication, dans le but de voir toutes les publications liées à cette branche précise. À gauche, une liste des branches déroulante est présente, et facilite l’accès rapide à toutes les branches. Une autre fonction de filtrage est présente pour le nombre de publications affichées sur une page. Le site affiche jusqu'à 5 publications par page. Lorsque le site contient plus de 5 publications, il est possible de changer de page avec le menu de navigation afin de voir les autres publications
 
 ### Suivis
 
@@ -101,7 +101,9 @@ Comparaison
 Les tiroirs sont des listes qui peuvent être cachées. Ils permettent une manière de fournir des informations dans un site Web qui est dynamique est simple à comprendre.
     
 
+### Changement de photo de profil
 
+Il est tout à fait possible de changer de photo de profil. Dans le but d'accéder à cette fonctionnalité, l'utilisateur doit se rendre dans les paramètres du site. Il pourra alors y coller un lien d'une photo. Si le lien utilisé n'est pas une image,  la fonction ne s’exécutera pas.
 
 
 	
