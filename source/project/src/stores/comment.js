@@ -82,23 +82,15 @@ export const useCommentStore = defineStore('commentStore', {
           localStorage.setItem('data', JSON.stringify(this.commentsList));
         }
       } else {
-        // Use of fetch to retrieve data from the backend using an API
-        // try {
-        //     await fetch('https://your-backend-url.com/comments', {
-        //         method: 'GET',
-        //         headers: { 'Content-Type': 'application/json' },
-        //         body: JSON.stringify(comment),
-        //     })
-        //     commentsList = [...this.comments, comment]
-        // } catch (error) {
-        //     console.error(error)
-        // }
+        // Save in the backend
       }
     },
 
-    async addComment(type, id, comment, nameprofile, pp_profile, location) {
+    async addComment(type, id, comment, nameprofile, mailprofile, passwordprofile, pp_profile, location) {
       // save personal information and add new information
       comment.name = nameprofile;
+      comment.mail = mailprofile;
+      comment.password = passwordprofile;
       comment.date = date.formatDate(Date.now(), 'DD-MM-YYYY');
       comment.pp_profile = pp_profile;
       comment.comment = [];
@@ -138,16 +130,6 @@ export const useCommentStore = defineStore('commentStore', {
         localStorage.setItem('data', JSON.stringify(this.commentsList));
       } else {
         // Save in the backend
-        // Utilisation de fetch pour aller récupérer les données du backend à l'aide d'une API
-        // try {
-        //     await fetch('https://your-backend-url.com/comments', {
-        //         method: 'POST',
-        //         headers: { 'Content-Type': 'application/json' },
-        //         body: JSON.stringify(comment),
-        //     })
-        // } catch (error) {
-        //     console.error(error)
-        // }
       }
     },
     deleteComment(id, location) {

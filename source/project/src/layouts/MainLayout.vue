@@ -97,6 +97,8 @@
     <q-page-container class="bgColor" v-show="writeComment == true">
       <createPostComment @finished="isAvailable()" />
     </q-page-container>
+
+
     <!-- third part, if writeComment is true, (writeComment is a variable that is true if there is a request to write a publication), as it is true, it displays a page to give the data about the problem-->
   </q-layout>
 </template>
@@ -122,25 +124,25 @@ const fabVar = ref(false);
 
 const branches = [
   'Allemand',
-  'Anglais ',
-  'Appl. des math. ',
+  'Anglais',
+  'Appl. des math.',
   'Arts visuels',
-  'Biologie ',
-  'Chimie ',
+  'Biologie',
+  'Chimie',
   'Economie et droit',
-  'Education physique ',
-  'Français ',
+  'Education physique',
+  'Français',
   'Géographie',
   'Grec',
-  'Histoire ',
-  'Informatique ',
-  'Italien ',
+  'Histoire',
+  'Informatique',
+  'Italien',
   'Latin',
   'Mathématiques',
-  'Musique ',
-  'Philisophie ',
+  'Musique',
+  'Philisophie',
   'Physique',
-  'Sciences religieuses ',
+  'Sciences religieuses',
 ];
 
 //Save the list of branches in the Storage location

@@ -1,3 +1,7 @@
+```{raw} latex
+\appendix
+```
+
 # Maquette
 ## Version ordinateur
 
@@ -135,7 +139,11 @@ width: 30%
 ````
 
 
-## Version téléphone<br>
+```{raw} latex
+\newpage
+```
+
+## Version téléphone
 
 ````{only} html
 ```{figure} _static/Frame_(34).png
@@ -152,7 +160,7 @@ width: 30%
 
 ```{figure} _static/Frame_(12).png
 ---
-width: 40%
+width: 30%
 
 ```
 ````{only} html

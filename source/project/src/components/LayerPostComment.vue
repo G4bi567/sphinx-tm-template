@@ -22,7 +22,12 @@
 
         <q-item-section
           side
-          v-if="(title !== undefined, UserStore.Profile.name == name)"
+          v-if="
+            title !== undefined &&
+            UserStore.Profile.name == name &&
+            UserStore.Profile.mail == mail &&
+            UserStore.Profile.password == password
+          "
         >
           <q-btn-dropdown color="secondary">
             <q-list>
@@ -184,7 +189,7 @@ import { defineProps, reactive, ref } from 'vue';
 import LayerPostComment from 'components/LayerPostComment.vue';
 import { useCommentStore } from 'stores/comment.js';
 import { fasHeartCirclePlus } from '@quasar/extras/fontawesome-v6';
-import { useUserStore } from 'src/stores/user.js
+import { useUserStore } from 'stores/user.js';
 
 //allows access to the User store
 const UserStore = useUserStore();
@@ -195,6 +200,8 @@ const CommentStore = useCommentStore();
 const props = defineProps({
   title: String,
   name: String,
+  mail: String,
+  password: String,
   date: String,
   description: String,
   pp_profile: String,
@@ -262,6 +269,8 @@ function isAvailable(NewPost, id) {
       id,
       NewComment,
       UserStore.Profile.name,
+      UserStore.Profile.mail,
+      UserStore.Profile.password,
       UserStore.pp_profile,
       'localStorage'
     );

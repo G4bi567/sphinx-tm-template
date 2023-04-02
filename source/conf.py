@@ -22,7 +22,8 @@ from tmconfig import tmconfig
 
 project = tmconfig.title
 author = tmconfig.author
-copyright = f'2021, {author}'
+copyright = f'{tmconfig.year}, {author}'
+
 
 # The full version, including alpha/beta/rc tags
 release = tmconfig.release
