@@ -1,9 +1,4 @@
 
-
-```{raw} latex
-\appendix
-```
-
 # Déclaration personnelle
 
 ```{raw} latex
