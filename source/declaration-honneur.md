@@ -5,9 +5,9 @@
 {
 \large
 \begin{tabbing}
-\textbf{Nom:} ~~~~~ \=  \= \studentlastname \\
-\textbf{Prénom:}~~~ \>  \> \studentfirstname \\
-\textbf{Adresse:}~~ \>  \> \studentaddress
+\textbf{Nom:} Teixeira Dias \\
+\textbf{Prénom:} Gabriel \\
+\textbf{Adresse:} Route de la Coula 74, 1618 \\
 \end{tabbing} 
 }
 
@@ -55,7 +55,7 @@
 {
 \large
 \begin{tabbing}
-\textbf{Lieu, date:} ~~ \=  \= \ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots \\
+\textbf{Lieu, date:} 3 avril 2023 \\
 \textbf{Signature:} ~~~ \>  \> \ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots
 \end{tabbing} 
 }
