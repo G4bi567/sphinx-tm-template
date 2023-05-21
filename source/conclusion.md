@@ -18,7 +18,7 @@ Cette création de profil est primordiale, en vue de créer des publications ave
 De plus, les paginations ont été oubliées lors de la définition des objectifs. 
 Il ne s'agit pas d'une fonctionnalité très attrayante, mais elle est extrêmement utile afin de garder une unicité et une élégance dans le projet. 
 
-Cependant, certaines fonctionnalités prévues au début du travail n’ont pas été implémentées, car lors de la modélisation et de la définition des objectifs du travail, le projet a été sous-estimé.
+Cependant, certaines fonctionnalités prévues au début du travail, comme les questions adaptées à chaque utilisateur, n’ont pas été implémentées, car lors de la modélisation et de la définition des objectifs du travail, le projet a été sous-estimé.
 Le projet est le premier travail fait après l'apprentissage de la programmation web, ce qui explique le manque d’expérience dans la mise en place de ce projet. 
 Par exemple, il était prévu d'intégrer le backend dans le projet. 
 Les séminaires n’ont malheureusement pas donné la possibilité d’apprendre à en utiliser un. 
@@ -37,9 +37,9 @@ Ensuite, une nouvelle page ou un bouton qui sert de filtre peuvent être utilis�
 L'un des problèmes lors de la finalisation d'un travail créatif est le fait qu'il y a toujours de nouvelles fonctionnalités et de nouveaux outils à implémenter. 
 
 Pendant la présentation du projet, le composant récursif « LayerPostComment » a été présenté. 
-Cependant, pour de commentaires imbriqués, ce schéma devient plus compliqué à mettre en place. 
-Il faut avoir un gestionnaire de données capable de trouver l’emplacement où il faudrait ajouter le commentaire, car, avec la méthode actuelle, il est difficile d’ajouter un commentaire à un commentaire précédent d’une manière effective. 
-La même logique s’applique lorsque l’utilisateur veut supprimer un commentaire, il est difficle de retrouver l’index d’un commentaire facilement. 
+Cependant, pour des commentaires imbriqués, ce schéma devient plus compliqué à mettre en place. 
+Il faut avoir un gestionnaire de données capable de trouver l’emplacement où il faudrait ajouter le commentaire, car avec la méthode actuelle, il est difficile d’ajouter un commentaire à un commentaire précédent d’une manière effective. 
+La même logique s’applique lorsque l’utilisateur veut supprimer un commentaire. Il est difficle de retrouver l’index d’un commentaire facilement. 
 Ce problème peut être résolu grâce à l'implémentation d'un backend, qui permet de gérer les données avec plus d'aisance. 
 Avec l'implémentation d'un backend, la création d'un formulaire réel de connexion est plus utile.
-Il est aussi envisageable de créer un rôle administrateur, cette personne pourra gérer tous les commentaires et les supprimer.
+Il est aussi envisageable de créer un rôle administrateur. Cette personne pourra gérer tous les commentaires et les supprimer.

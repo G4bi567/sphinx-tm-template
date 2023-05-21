@@ -14,7 +14,7 @@ Cette section présente une analyse approfondie de tous les fichiers du projet.
     ---
     Exemple du composant « CreatePostComment ». 
     ```
-    * Tout d’abord, l’utilisateur doit fournir la branche sur laquelle il a un questionnement. Puis il doit écrire un titre pour sa publication. Finalement, il doit rédiger une description détaillée, en vue de faire comprendre le mieux possible le problème aux autres utilisateurs. La description peut être mise en forme grâce aux options de police et de format.  Le composant se termine par un bouton de soumission « Envoyer » qui permet d’activer la fonction qui enregistre la publication. Puis l’utilisateur est envoyé sur la page d’accueil avec la nouvelle publication présente. La fonction « addPost », qui permet d’enregistrer la nouvelle publication, sera expliquée plus en détail dans src/stores/comment.js.
+    * Tout d’abord, l’utilisateur doit fournir la branche sur laquelle il a un questionnement. Puis, il doit écrire un titre pour sa publication. Finalement, il doit rédiger une description détaillée, en vue de faire comprendre le mieux possible le problème aux autres utilisateurs. La description peut être mise en forme grâce aux options de police et de format.  Le composant se termine par un bouton de soumission « Envoyer » qui permet d’activer la fonction qui enregistre la publication. Puis l’utilisateur est envoyé sur la page d’accueil avec la nouvelle publication présente. La fonction « addPost », qui permet d’enregistrer la nouvelle publication, sera expliquée plus en détail dans src/stores/comment.js.
     * Une fonctionnalité intéressante sur ce composant est la fonction « isAvailable ». 
     
     ```{literalinclude} project/src/components/CreatePostComment.vue
@@ -32,7 +32,7 @@ Cette section présente une analyse approfondie de tous les fichiers du projet.
     ---
     Exemple du composant « LayerPostComment ». 
     ```
-    * Ce composant prend en paramètre les données fournies par le composant « CreatePostComment », vu précédemment. Premièrement, il affiche, sur la partie supérieure gauche, la photo de profil et le nom de l’utilisateur. Cette partie est cliquable et permet d’envoyer l’utilisateur sur la page du profil en question. Ensuite, sur la partie supérieure droite, un menu déroulant est présent. Lorsque ce menu est cliqué, une option « supprimer » apparaît. Celle-ci donne la possibilité de supprimer la publication. Puis, la partie du centre est composée du nom de la branche, du titre de la publication et la description du problème. Le nom de la branche est cliquable et emmène l’utilisateur sur une page dédiée aux publications de la branche choisie.  Sur la partie inférieure se trouvent des fonctionnalités plus interactives. Tout d’abord, un bouton cœur permet d’enregistrer une publication dans les suivis. Le bouton en forme de bulle permet d’afficher la partie des commentaires ci-dessous.
+    * Ce composant prend en paramètre les données fournies par le composant « CreatePostComment », vu précédemment. Premièrement, il affiche, sur la partie supérieure gauche, la photo de profil et le nom de l’utilisateur. Cette partie est cliquable et permet d’envoyer l’utilisateur sur la page du profil en question. Ensuite, sur la partie supérieure droite, un menu déroulant est présent. Lorsque ce menu est ouvert, une option « supprimer » apparaît. Celle-ci donne la possibilité de supprimer la publication. Puis, la partie du centre est composée du nom de la branche, du titre de la publication et la description du problème. Le nom de la branche est cliquable et dirige l’utilisateur sur une page dédiée aux publications de la branche choisie.  Sur la partie inférieure se trouvent des fonctionnalités plus interactives. Tout d’abord, un bouton cœur permet d’enregistrer une publication dans les suivis. Le bouton en forme de bulle permet d’afficher la partie des commentaires ci-dessous.
     ```{figure} figures/comment_partie_commentaire.png
     ---
     width: 50%
@@ -63,7 +63,7 @@ Cette section présente une analyse approfondie de tous les fichiers du projet.
     ```
 
     
-    * Cette barre permet d’accéder à plusieurs fonctionnalités du site. Tout d’abord, des boutons « Home page » et « Suivis » sont présents. Ils permettent d’accéder soit à la page principale des publications, soit à la page réservée aux publications suivies. Le bouton « Home Page » sert à remettre à zéro la page lorsqu’un filtre est utilisé. La page « Suivis » est utile à l’utilisateur, afin de voir l’évolution de la discussion pour résoudre un problème. Ensuite, une image du logo du Collège du Sud et le titre « Forum CSUD » font office de titre pour le site Web. Puis, un bouton « une question » permet d’accéder au formulaire de création de publication, vu précédemment comme étant le composant « CreatePostComment ». Finalement, il y a un menu déroulant qui permet d’accéder à la page des paramètres du site.
+    * Cette barre permet d’accéder à plusieurs fonctionnalités du site. Tout d’abord, des boutons « Home page » et « Suivis » sont présents. Ils permettent d’accéder soit à la page principale des publications, soit à la page réservée aux publications suivies. Le bouton « Home Page » sert à remettre à zéro la page lorsqu’un filtre est utilisé. La page « Suivis » est utile à l’utilisateur, afin de voir l’évolution de la discussion pour résoudre un problème. Ensuite, une image du logo du Collège du Sud et le titre « Forum CSUD » font office de titre pour le site Web. Puis, un bouton « une question » permet d’accéder au formulaire de création de publication vu précédemment dans le composant « CreatePostComment ». Finalement, il y a un menu déroulant qui permet d’accéder à la page des paramètres du site.
     * Les deux boutons aux extrémités permettent d’ouvrir des « drawers », c’est-à-dire des tiroirs. Du côté gauche, les branches sont affichées. Lorsque l’utilisateur clique sur une des branches, il est amené sur la page relative et ne peut alors voir que les publications liées à cette branche. Du côté droit, des liens utiles pour les étudiants sont affichés et permettent un accès facile à des outils pertinents pour les élèves.
     * La suite du code permet d’afficher les composants et les pages principales du site. Cette fonctionnalité est établie grâce à des conditions sur la base de variables qui changent lorsque l’utilisateur accède aux pages du site. Voici le code:
     ```{literalinclude} project/src/layouts/MainLayout.vue
@@ -93,14 +93,14 @@ Cette section présente une analyse approfondie de tous les fichiers du projet.
     :linenos: true
     :lines: 60-106
     ```
-    * Cette méthode de filtrage est assez facile à comprendre. Lorsque le site se charge, la variable, « filteroptiontype » est égal à « null » et donc aucun filtre n’est activé.  Dès lors, toutes les publications s’affichent, triées dans l’ordre chronologique. Voici un exemple de la page sans filtre.
+    * Cette méthode de filtrage est assez facile à comprendre. Lorsque le site se lance, la variable, « filteroptiontype » est égal à « null » et donc aucun filtre n’est activé.  Dès lors, toutes les publications s’affichent, triées dans l’ordre chronologique. Voici un exemple de la page sans filtre.
     ```{figure} figures/Index_page_exemple.png
     ---
     width: 50%
     ---
     Exemple de la page "IndexPage".
     ``` 
-    * Au moment où l’utilisateur appuie sur un profil dans une publication, la variable « filteroptiontype » est alors assignée la valeur « name ». La fonction assignera à la variable « UpdatedList » la liste des publications qui ont été écrites par la personne choisie. C’est la même logique quand l’utilisateur appuie sur une branche, la fonction fait le filtrage par rapport aux publications qui ont cette même branche en commun. En plus, la fonction permet aussi d’afficher les publications qu’on a voulu suivre lorsque l’utilisateur appuie sur le bouton « Suivis ».
+    * Au moment où l’utilisateur appuie sur un profil dans une publication, la variable « filteroptiontype » est alors assignée à la valeur « name ». La fonction assignera à la variable « UpdatedList » la liste des publications qui ont été écrites par la personne choisie. C’est la même logique quand l’utilisateur appuie sur une branche. La fonction fait le filtrage par rapport aux publications qui ont cette même branche en commun. En plus, la fonction permet aussi d’afficher les publications que l'utilisateur suit.
     * Finalement, la dernière partie importante de cette page est sa pagination. Elle possède une pagination réactive, qui augmente lorsque des publications sont ajoutées. Un nombre de 5 publications est affiché au maximum par page. Au bas du site se trouve une pagination qui permet de voir toutes les publications publiées.
 
 - src/pages/LogInPage.vue
@@ -111,7 +111,7 @@ Cette section présente une analyse approfondie de tous les fichiers du projet.
     ---
     Exemple de la page "LogInPage".
     ```
-    * La fonction principale est la « controlTheValues() » qui empêche l’utilisateur de finir la connexion avec des champs d’entrée vides. Cette fonction vérifie si chaque champ est rempli ou si le nom d'utilisateur est trop long. Si ce n’est pas le cas, un message apparaît expliquant le problème. Lorsqu’il n’y a aucun problème, la page « IndexPage« » s’ouvre.
+    * La fonction principale est « controlTheValues() » qui empêche l’utilisateur de finir la connexion avec des champs d’entrée vides. Cette fonction vérifie si chaque champ est rempli ou si le nom d'utilisateur est trop long, c'est-à-dire 20 caractères. Si une des conditions n'est pas remplie, un message apparaît expliquant le problème. Lorsqu’il n’y a aucun problème, la page « IndexPage« » s’ouvre.
 - src/pages/settingsPage.vue
     * La page « Paramètres » est une page très utile pour l’utilisateur. Voici à quoi elle ressemble.
     ```{figure} figures/exemple_parametre.png
@@ -132,7 +132,7 @@ Cette section présente une analyse approfondie de tous les fichiers du projet.
     ```
     * Les routes {cite:p}`router` individuelles qui sont montrées ci-dessus en tant que « path » permettent de faire fonctionner tout le site et de charger les pages définies. Il y a la route principale qui est le chemin « / ». Ensuite, il y a les routes « enfant », comme "IndexPage" et "settingsPage", qui sont chargées à l’intérieur du composant MainLayout. La dernière route est un « attrape tout », ce que signifie qu’elle est utilisée pour toutes les routes non définies.
 - src/stores/comment.js
-    * Ce {index}`store` est une bibliothèque de gestion d'état qui est dédiée aux publications. Il permet le stockage de données, ainsi que la création de fonctions globales. Ce {index}`store` commence par les variables globales, elles peuvent être appelées dans tout le projet.  
+    * Ce {index}`store` est une bibliothèque de gestion d'états qui est dédiée aux publications. Il permet le stockage de données, ainsi que la création de fonctions globales. Ce {index}`store` commence par les variables globales, celles-ci peuvent être appelées dans tout le projet.  
     * Le {index}`store` contient ensuite la fonction « loadComment ». Si cette fonction est définie avec le paramètre « localStorage », les publications sont chargées dans la variable « commentsList » depuis le "local Storage" lors de l’ouverture de la page « IndexPage ». S’il n’y a aucune publication dans le "localStorage", des publications déjà préparées, sont enregistrées dans la variable ci-dessus et dans le "localStorage".  Le paramètre «localStorage » permet de faciliter le codage lors de la création d’un backend, car il suffit de changer le paramètre « location » par « backend ».
     * La fonction « addComment » prend plusieurs paramètres en compte. Voici un bout de la fonction :
     ```{literalinclude} project/src/stores/comment.js
@@ -158,15 +158,15 @@ Cette section présente une analyse approfondie de tous les fichiers du projet.
     :lines: 119-133
     ```
     * Comme montré ci-dessus, le code a deux manières de définir la variable « commentsList ». Si c’est un commentaire, le nouveau commentaire est ajouté dans la bonne publication, et si c’est une publication, celle-ci est ajoutée dans la liste des publications. Pour finir, la nouvelle liste est ajoutée dans le localStorage, car la variable location est « localStorage ».
-    * La fonction suivante s’appelle « deleteComment ».  Celle-ci prend en paramètre l'id de la publication que l’utilisateur veut supprimer et elle prend aussi la destination, c’est-à-dire le local Storage. Elle demande une confirmation à l'utilisateur avant de s'exécuter, puis elle donne la possibilité de supprimer la publication choisie.
+    * La fonction suivante s’appelle « deleteComment ».  Celle-ci prend en paramètre l'id de la publication que l’utilisateur veut supprimer et prend aussi la destination, c’est-à-dire le local Storage. Elle demande une confirmation à l'utilisateur avant de s'exécuter, puis donne la possibilité de supprimer la publication choisie.
     * La dernière fonction « resetComment » prend en paramètre la destination, qui est définie comme « localStorage ». Elle efface la variable contenant les listes des publications dans le localStorage.
 
 - src/stores/index.js
     * Ce fichier permet d'intégrer le {index}`magasin` de {index}`Pinia`. 
 - src/stores/user.js
     * Ce {index}`store` est utilisé afin de gérer les données relatives à l’utilisateur. Il contient par exemple la liste « followed » qui garde l’id des publications suivies.
-    * Ce {index}`store` possède tout d'abord deux fonctions opposées. La fonction « loginVariable » prend en paramètre « location ». C'est l’endroit où les données sont recherchées, ici le local Storage. Cette fonction permet premièrement de fermer la page « LogInPage », puis enregistre les données de l’utilisateur dans le localStorage. Finalement, elle enregistre la photo de profil de base dans le localStorage. Ensuite, la fonction opposée « logOut » qui donne la possibilité d’effacer les données de l’utilisateur et d’ouvrir la page « LogInPage ». Elle utilise le même paramètre « location ».
-    * Ensuite, il y a une fonction « changePpProfile». Cette fonction change la photo de profil de l’utilisateur par l’URL fournie dans le paramètre « NewLink », cette URL s’enregistre ainsi dans le localStorage.
+    * Ce {index}`store` possède tout d'abord deux fonctions opposées. La fonction « loginVariable » prend en paramètre « location ». C'est l’endroit où les données sont recherchées, ici le local Storage. Cette fonction permet premièrement de fermer la page « LogInPage », puis enregistre les données de l’utilisateur dans le localStorage. Finalement, elle enregistre la photo de profil de base dans le localStorage. Ensuite, la fonction opposée « logOut » qui donne la possibilité de se déconnecter et d’ouvrir la page « LogInPage ». Elle utilise le même paramètre « location ».
+    * Ensuite, il y a une fonction « changePpProfile». Cette fonction change la photo de profil de l’utilisateur par l’URL fournie dans le paramètre « NewLink ». Cette URL s’enregistre ainsi dans le localStorage.
     * La fonction la plus importante dans ce {index}`store` est la fonction «profileload ». Cette fonction charge les données de l’utilisateur dans toutes les pages. Voici la fonction :
     ```{literalinclude} project/src/stores/user.js
     :language: html
@@ -185,9 +185,9 @@ Cette section présente une analyse approfondie de tous les fichiers du projet.
 - .eslintrc.js {cite:p}`Eslint`
     * Ce fichier configure les règles ESLint, qui permettent aussi de garder une cohérence dans le projet.
 - .gitignore {cite:p}`gitignore_gitkeep`
-    * Ce fichier définit les fichiers qui ne doivent pas être suivis par Git. 
--.gitpod.yml
-    * Ce fichier charge directement les dépendances lorsque le projet est ouvert dans Gitpod.
+    * Ce fichier définit les fichiers qui ne doivent pas être suivis par Git.
+- .gitpod.yml
+    * Ce fichier permet de configurer l'environnement de développement.
 - .prettierrc
     * Ce fichier permet de formater le code en utilisant Prettier. Il assure un formatage automatique en fonction d’un ensemble de règles.
 - .stackblitzrc
@@ -205,7 +205,7 @@ Cette section présente une analyse approfondie de tous les fichiers du projet.
 - quasar.config.js {cite:p}`quasar-docs`
     * Ce fichier configure {index}`Quasar`, par exemple les paramètres, les thèmes, les plugins, etc…
 - Read.me
-    * Ce fichier contient des informations importantes sur le projet. Il est utile pour les utilisateurs et les développeurs, car il permet de comprendre rapidement le code. Il comporte un bref résumé du programme, les instructions pour l’installation et la mise en route du projet. Puis il décrit aussi la manière d'utiliser le programme. 
+    * Ce fichier contient des informations importantes sur le projet. Il est utile pour les utilisateurs et les développeurs, car il permet de comprendre rapidement le code. Il comporte un bref résumé du programme, les instructions pour l’installation et la mise en route du projet. Puis, il décrit aussi la manière d'utiliser le programme. 
 - Yarn.lock
     * Ce fichier est créé par Yarn. L’objectif de ce fichier est de permettre aux développeurs d’utiliser la même version de chaque dépendance, évitant les problèmes.
 

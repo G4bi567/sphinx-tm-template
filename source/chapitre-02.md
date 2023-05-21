@@ -58,7 +58,7 @@ Yarn NPM {cite:p}`yarn` est un gestionnaire de paquets pour {index}`Javascript`,
 	quasar dev
 	```
 
-Cela démarre le serveur de développement et un nouvel onglet s’ouvre. Si rien ne s’ouvre, il faut positionner la souris sur <http://localhost>..., appuyer sur la touche « ctrl » et faire un click gauche.
+Cela démarre le serveur de développement et un nouvel onglet s’ouvre. Si rien ne s’ouvre, il faut positionner la souris sur <http://localhost>..., appuyer sur la touche « ctrl » et faire un clic gauche.
 
 
 ## Présentation des principales fonctionnalités 
@@ -69,7 +69,7 @@ Lors de l’arrivée sur le site, un nom, un mail et un mot de passe sont demand
 
 ### Créer des publications et des commentaires
 
-La fonctionnalité la plus importante de ce site est la possibilité de créer ou de répondre à une publication. Tout d’abord, en vue de créer une publication, il est très facile de repérer le bouton « une question ». L’utilisateur peut alors compléter les paramètres de sa publication et l’envoyer dans la base de données. Tout de suite, il est possible de voir que la nouvelle publication a été ajoutée. Puis, le commentaire de publication fonctionne de la même façon. Cependant, cette fois-ci, seule la réponse est importante, car les autres paramètres sont déjà complétés. 
+La fonctionnalité la plus importante de ce site est la possibilité de créer ou de répondre à une publication. Tout d’abord, en vue de créer une publication, il faut cliquer vers la bouton « une question ». L’utilisateur peut alors compléter les paramètres de sa publication et l’envoyer dans la base de données. Tout de suite, il est possible de voir que la nouvelle publication a été ajoutée. Puis, le commentaire de publication fonctionne de la même façon. Cependant, cette fois-ci, seule la réponse est importante, car les autres paramètres sont déjà complétés. 
 
 ### Suppression
 
@@ -81,7 +81,7 @@ Afin d’améliorer l’usage du forum, des fonctions filtrent les publications.
 
 ### Suivis
 
-La page Suivis permet de voir les publications que l’utilisateur a aimées grâce au bouton cœur présent sur les publications. Ceci permet de suivre une publication, si la réponse à la problématique intéresse l'utilisateur.
+La page Suivis permet de voir les publications que l’utilisateur a aimées grâce au bouton cœur présent sur les publications. Ceci permet de suivre une publication lorsque les réponses intéressent l'utilisateur.
 
 ### Liens utiles 
 
@@ -94,8 +94,7 @@ width: 30%
 Tiroir des liens utiles
 ```
 
-Les tiroirs sont des listes qui peuvent être cachées. Ils permettent une manière de fournir des informations dans un site Web qui est dynamique est simple à comprendre.
-    
+Les tiroirs sont des listes qui peuvent être cachées. Ils permettent de fournir des informations dans un site Web dynamique.
 
 ### Changement de photo de profil
 
