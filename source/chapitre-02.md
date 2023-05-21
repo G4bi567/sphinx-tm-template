@@ -3,7 +3,7 @@
 
 ## Installation et mise en route
 
-Afin de pouvoir lancer le projet sur un ordinateur, il faut respecter une série d’étapes. Si {index}`Visual Studio Code` est déjà installé, le numéro 1 n’a pas besoin d’être fait. Si Node.js l’est aussi, le numéro 2 n’a non plus besoin d’être fait.
+Afin de pouvoir lancer le projet sur un ordinateur, il faut respecter une série d’étapes. Si {index}`Visual Studio Code` est déjà installé, le numéro 1 n’a pas besoin d’être fait. Si Node.js l’est aussi, le numéro 2 n’a pas besoin d’être fait.
 
 1. Télécharger et installer {index}`Visual Studio Code`. Le fichier .exe peut être retrouvé sur le site officiel : <https://code.visualstudio.com/> ; il faut choisir la version adaptée au système d’exploitation de l'ordinateur, comme Windows, MacOs, Linux.
 
@@ -12,7 +12,7 @@ Visual Studio {cite:p}`VSC` Code, souvent abrégé en VSCode, est un logiciel li
 2. Télécharger et installer Node.js, grâce au lien suivant : <https://nodejs.org/en/download>.
 Pour l’installation, il faut accepter des modifications en tant qu’administrateur.
 
-Node.js {cite:p}`Node,Node2` est un environnement d’exécution {index}`Javascript` côté serveur. Grâce à ce framework, les développeurs disposent d’un interpréter du code {index}`Javascript` en dehors du navigateur. La distribution de Node.js intègre NPM, ou Node Package Manager. NPM {cite:p}`Node,Node2` est un environnement d’exécution {index}`Javascript` côté serveur. Grâce à ce framework, les développeurs disposent d’un interpréter du code {index}`Javascript`. La distribution de Node.js intègre NPM, ou Node Package Manager. NPM est un gestionnaire de paquets pour Node.js qui permet aux développeurs de gérer facilement les dépendances de leur projet. NPM facilite l’installation, la mise à jour et la suppression des paquets et des modules nécessaires à un projet. Cela permet aux développeurs de créer des applications de bureau multiplateformes à l’aide de technologies Web telles que {index}`HTML`, {index}`CSS` et {index}`Javascript`.
+Node.js {cite:p}`Node,Node2` est un environnement d’exécution {index}`Javascript` côté serveur. Grâce à ce framework, les développeurs disposent d’un interpréteur du code {index}`Javascript` en dehors du navigateur. La distribution de Node.js intègre NPM, ou Node Package Manager. NPM {cite:p}`Node,Node2` est un gestionnaire de paquets pour Node.js qui permet aux développeurs de gérer facilement les dépendances de leur projet. NPM facilite l’installation, la mise à jour et la suppression des paquets et des modules nécessaires à un projet. Cela permet aux développeurs de créer des applications de bureau multiplateformes à l’aide de technologies Web telles que {index}`HTML`, {index}`CSS` et {index}`Javascript`.
 
 3.	Faire une vérification pour savoir si Node.js et NPM sont correctement installés. Il faut ouvrir le terminal sur {index}`Visual Studio Code` en allant sur Affichage > Terminal ou Terminal > Nouveau Terminal. Puis il faut écrire les deux commandes suivantes séparément et ensuite, il faut appuyer sur enter. 
 
@@ -34,9 +34,9 @@ Node.js {cite:p}`Node,Node2` est un environnement d’exécution {index}`Javascr
 	npm install --global yarn
 	```
 
-Yarn NPM {cite:p}`yarn` est un gestionnaire de paquets pour {index}`Javascript`, créé par Facebook, et est compatible avec NPM et Node.js. Un des avantages par rapport à NPM est le fait qu’il arrive à installer les dépendances et les paquets plus rapidement. 
+Yarn NPM {cite:p}`yarn` est un gestionnaire de paquets pour {index}`Javascript`, créé par Facebook, et compatible avec NPM et Node.js. Un des avantages par rapport à NPM est qu'Yarn arrive à installer les dépendances et les paquets plus rapidement. 
 
-5. Télécharger et extraire le code du projet sur <https://github.com/G4bi567/quasar-projet-true-form>. Il faut ensuite ouvrir le dossier en le glissant dans {index}`Visual Studio Code` ou en allant dans Fichier > Ouvrir le dossier > ... et en choisissant le dossier du travail. Ce projet est stocké sur {index}`GitHub`, si Git est installé sur la machine utilisée, il est aussi possible d'utiliser la commande suivante dans le terminal afin d'installer le projet :
+5. Télécharger et extraire le code du projet sur <https://github.com/G4bi567/quasar-projet-true-form>. Il faut ensuite ouvrir le dossier en le glissant dans {index}`Visual Studio Code` ou en allant dans Fichier > Ouvrir le dossier > ... et en choisissant le dossier du travail. Ce projet est stocké sur {index}`GitHub`. Si Git est installé sur la machine utilisée, il est aussi possible d'utiliser la commande suivante dans le terminal afin d'installer le projet :
 
 	```bash
 
@@ -44,7 +44,7 @@ Yarn NPM {cite:p}`yarn` est un gestionnaire de paquets pour {index}`Javascript`,
 
 	```
 
-6.	Installer les indépendances avec le terminal en écrivant :
+6.	Installer les dépendances avec le terminal en écrivant :
 	```bash
 
 	yarn install
