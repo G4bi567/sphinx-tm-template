@@ -69,7 +69,7 @@ Lors de l’arrivée sur le site, un nom, un mail et un mot de passe sont demand
 
 ### Créer des publications et des commentaires
 
-La fonctionnalité la plus importante de ce site est la possibilité de créer ou de répondre à une publication. Tout d’abord, en vue de créer une publication, il faut cliquer vers la bouton « une question ». L’utilisateur peut alors compléter les paramètres de sa publication et l’envoyer dans la base de données. Tout de suite, il est possible de voir que la nouvelle publication a été ajoutée. Puis, le commentaire de publication fonctionne de la même façon. Cependant, cette fois-ci, seule la réponse est importante, car les autres paramètres sont déjà complétés. 
+La fonctionnalité la plus importante de ce site est la possibilité de créer ou de répondre à une publication. Tout d’abord, en vue de créer une publication, il faut cliquer sur le bouton « une question ». L’utilisateur peut alors compléter les paramètres de sa publication et l’envoyer dans la base de données. Tout de suite, il est possible de voir que la nouvelle publication a été ajoutée. Puis, le commentaire de publication fonctionne de la même façon. Cependant, cette fois-ci, seule la réponse est importante, car les autres paramètres sont déjà complétés. 
 
 ### Suppression
 

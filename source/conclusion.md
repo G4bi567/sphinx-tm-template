@@ -18,7 +18,7 @@ Cette création de profil est primordiale, en vue de créer des publications ave
 De plus, les paginations ont été oubliées lors de la définition des objectifs. 
 Il ne s'agit pas d'une fonctionnalité très attrayante, mais elle est extrêmement utile afin de garder une unicité et une élégance dans le projet. 
 
-Cependant, certaines fonctionnalités prévues au début du travail, comme les questions adaptées à chaque utilisateur, n’ont pas été implémentées, car lors de la modélisation et de la définition des objectifs du travail, le projet a été sous-estimé.
+Cependant, certaines fonctionnalités prévues initialement, telles que les questions adaptées à chaque utilisateur, n'ont pas été implémentées. Cela est dû à une sous-estimation du travail lors de la modélisation et de la définition des objectifs du projet.
 Le projet est le premier travail fait après l'apprentissage de la programmation web, ce qui explique le manque d’expérience dans la mise en place de ce projet. 
 Par exemple, il était prévu d'intégrer le backend dans le projet. 
 Les séminaires n’ont malheureusement pas donné la possibilité d’apprendre à en utiliser un. 
@@ -36,10 +36,6 @@ Ensuite, une nouvelle page ou un bouton qui sert de filtre peuvent être utilis�
 
 L'un des problèmes lors de la finalisation d'un travail créatif est le fait qu'il y a toujours de nouvelles fonctionnalités et de nouveaux outils à implémenter. 
 
-Pendant la présentation du projet, le composant récursif « LayerPostComment » a été présenté. 
-Cependant, pour des commentaires imbriqués, ce schéma devient plus compliqué à mettre en place. 
-Il faut avoir un gestionnaire de données capable de trouver l’emplacement où il faudrait ajouter le commentaire, car avec la méthode actuelle, il est difficile d’ajouter un commentaire à un commentaire précédent d’une manière effective. 
-La même logique s’applique lorsque l’utilisateur veut supprimer un commentaire. Il est difficle de retrouver l’index d’un commentaire facilement. 
-Ce problème peut être résolu grâce à l'implémentation d'un backend, qui permet de gérer les données avec plus d'aisance. 
-Avec l'implémentation d'un backend, la création d'un formulaire réel de connexion est plus utile.
-Il est aussi envisageable de créer un rôle administrateur. Cette personne pourra gérer tous les commentaires et les supprimer.
+Pendant la présentation du projet, le composant récursif « LayerPostComment » a été présenté. Cependant, la mise en place de commentaires imbriqués devient plus complexe avec cette approche. Il est nécessaire d'avoir un gestionnaire de données capable de déterminer l'emplacement où ajouter le commentaire, car la méthode actuelle ne permet pas d'ajouter efficacement un commentaire en réponse à un commentaire précédent. De même, il est difficile de retrouver l'index d'un commentaire pour le supprimer.
+Ces problèmes pourraient être résolus en mettant en place un backend qui facilite la gestion des données. Avec l'implémentation d'un backend, il serait possible de créer un formulaire de connexion plus fonctionnel. De plus, il serait envisageable de mettre en place un rôle administrateur qui aurait la capacité de gérer tous les commentaires et de les supprimer.
+L'intégration d'un backend offre des possibilités plus avancées de gestion des données et permettrait d'améliorer ces fonctionnalités dans le projet.
